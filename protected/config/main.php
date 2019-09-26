@@ -20,14 +20,14 @@ return array(
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
-		/*
+
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'Enter Your Password Here',
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
-		*/
+
 	),
 
 	// application components
@@ -36,8 +36,21 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-		// uncomment the following to enable URLs in path-format
-		/*
+
+
+        'clientScript'=>array(
+            'packages'=>array(
+                'jquery'=>array(
+                    'baseUrl'=>'//ajax.googleapis.com/ajax/libs/jquery/1/',
+                    'js'=>array('jquery.min.js'),
+                )
+            ),
+            // other clientScript config
+        ),
+
+        // uncomment the following to enable URLs in path-format
+
+
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
@@ -46,7 +59,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
+
 		'db'=>array(
 			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 		),
