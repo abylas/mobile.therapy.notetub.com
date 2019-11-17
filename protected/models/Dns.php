@@ -39,9 +39,8 @@ class Dns extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('environment', 'required'),
 			array('create_time, update_time', 'numerical', 'integerOnly'=>true),
-			array('arecord, cname, microservice', 'safe'),
+			array('environment, arecord, cname, microservice', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, environment, arecord, cname, microservice, create_time, update_time', 'safe', 'on'=>'search'),

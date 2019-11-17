@@ -8,7 +8,7 @@ CREATE TABLE tbl_user (
 CREATE TABLE tbl_dns
 (
 	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	environment TEXT NOT NULL,
+	environment TEXT,
 	arecord TEXT,
 	cname TEXT,
 	microservice TEXT,

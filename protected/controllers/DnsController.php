@@ -69,6 +69,62 @@ class DnsController extends Controller
 		if(isset($_POST['Dns']))
 		{
 			$model->attributes=$_POST['Dns'];
+			$arec = $_POST['Dns']['arecord'];
+
+			$tab = "\t";
+            $threetab = "\t\t\t";
+
+            $in = 'IN';
+            $a = 'A';
+            $semicolon = ';';
+
+            $ctag = "CNAME";
+
+
+            $split_arec_lines = explode("\n", $arec);
+
+            $lines = "";
+
+//            echo count($split_arec_lines);
+
+            foreach($split_arec_lines as $value) {
+
+//                echo $value;
+
+                $val_split = explode(",", $value);
+
+//                echo count($val_split);
+
+                if (count($val_split) == 0) {
+                    $lines = $lines . "\n";
+
+//                    $lines = nl2br($lines);
+                    continue;
+                } else {
+
+                    $domain = $val_split[0];
+                    $ip = isset($val_split[1]) ? $val_split[1] : "  ";
+
+                    $arec_final = $domain . $threetab . $in . $tab . $a . $tab . $ip;
+
+                    if(isset($val_split[1])) {
+                        $lines = $lines . $arec_final . "\n";
+//                        $lines = nl2br($lines);
+                    }
+                    else
+                    {
+                        $lines = $lines . "\n";
+//                        $lines = nl2br($lines);
+
+                    }
+                }
+
+            }
+
+
+
+			$model->arecord =  $lines ;
+
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
