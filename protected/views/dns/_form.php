@@ -40,13 +40,15 @@
 
     <div class="row">
         <?php echo $form->labelEx($model,'cname'); ?>
-        <?php echo $form->textArea($model,'cname',array('rows'=>6, 'cols'=>50)); ?>
+        <?php echo $form->textArea($model,'cname',array('rows'=>6, 'cols'=>50,
+            'placeholder'=>"No Blank lines allowed. Enter comma-separated pairs of (Short-Name, Long-Name} followed by new-line characters at end of each line. \n Example: \n vcenter,gpdcvmwvc201.gp.ocean.com \n wsus, gpdcwnentwu001.gp.ocean.com" )); ?>
         <?php echo $form->error($model,'cname'); ?>
     </div>
 
     <div class="row">
         <?php echo $form->labelEx($model,'microservice'); ?>
-        <?php echo $form->textArea($model,'microservice',array('rows'=>6, 'cols'=>50)); ?>
+        <?php echo $form->textArea($model,'microservice',array('rows'=>6, 'cols'=>50,
+            'placeholder'=>"No Blank lines allowed. Enter comma-separated pairs of (hort-Name, Long-Name) followed by new-line characters at end of each line. \n Example: \n EmergencyResponseTask ,swarm-ingress.gp.ocean.com \n calendar-service, swarm-ingress.gp.ocean.com" )); ?>
         <?php echo $form->error($model,'microservice'); ?>
     </div>
 
