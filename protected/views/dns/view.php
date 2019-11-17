@@ -16,10 +16,36 @@ $this->menu=array(
 
 <h1>View Dns #<?php echo $model->id; ?></h1>
 <?php
-echo "; ". $model->environment;
-echo "<br>";
-echo "<br>";
-echo nl2br($model->arecord );?>
+if(isset($model->environment)) {
+    echo "; " . $model->environment;
+    echo "<br>";
+    echo "<br>";
+}
+if(isset($model->arecord)) {
+    echo nl2br($model->arecord);
+    echo "<br>";
+    echo "<br>";
+}
+if(isset($model->cname))
+{
+echo nl2br($model->cname);
+    echo "<br>";
+    echo "<br>";
+}
+if(isset($model->microservice))
+{
+    echo nl2br($model->microservice);
+    echo "<br>";
+    echo "<br>";
+}
+
+
+
+
+
+
+?>
+
 
 <?php //$this->widget('zii.widgets.CDetailView', array(
 //	'data'=>$model,
