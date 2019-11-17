@@ -15,7 +15,7 @@
         <!--		--><?php //echo $form->error($model,'environment'); ?>
 
         <?php echo $form->labelEx($model,'environment'); ?>
-        <?php echo CHtml::dropDownList('environment', 'm',
+        <?php echo CHtml::activeDropDownList($model,'environment',
             array('CB' => 'CB',
                 'GB' => 'GB',
                 'RP' => 'RP',

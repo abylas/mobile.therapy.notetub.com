@@ -13,17 +13,23 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Dns #<?php echo $model->id; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id',
-		'environment',
-		'arecord',
-		'cname',
-		'microservice',
-		'create_time',
-		'update_time',
-	),
-)); ?>
+<h1>View Dns #<?php echo $model->id; ?></h1>
+<?php
+echo "; ". $model->environment;
+echo "<br>";
+echo "<br>";
+echo nl2br($model->arecord );?>
+
+<?php //$this->widget('zii.widgets.CDetailView', array(
+//	'data'=>$model,
+//	'attributes'=>array(
+//		'id',
+//		'environment',
+//		'arecord',
+//		'cname',
+//		'microservice',
+//		'create_time',
+//		'update_time',
+//	),
+//)); ?>
