@@ -93,7 +93,7 @@ class DnsController extends Controller
     public function getCname()
     {
         $cname = $_POST['Dns']['cname'];
-
+//echo $cname . "<br>". "\n";
         $tab = "\t";
         $threetab = "\t\t\t";
         $in = 'IN';
@@ -119,9 +119,12 @@ class DnsController extends Controller
                 else
                 {
                     $lines = $lines . "\n";
+                    echo "ISSUE in getting CNAME <br> \n";
                 }
             }
         }
+//        echo $lines . "<br>". "\n";
+
         return $lines;
     }
 
@@ -154,6 +157,8 @@ class DnsController extends Controller
                 else
                 {
                     $lines = $lines . "\n";
+//                    echo "ISSUE in getting Micro <br> \n";
+
                 }
             }
         }
@@ -177,13 +182,8 @@ class DnsController extends Controller
 
 
 			$model->arecord =  $this->getArecord();
-
-			if(isset($_POST['dns']['cname'])) {
-                $model->cname = $this->getCname();
-            }
-            if(isset($_POST['dns']['microservice'])) {
-                $model->microservice = $this->getMicro();
-            }
+			$model->cname = $this->getCname();
+			$model->microservice = $this->getMicro();
 
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));

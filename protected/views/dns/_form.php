@@ -9,6 +9,15 @@
 
     <?php echo $form->errorSummary($model); ?>
 
+    <div class = "row">
+
+<!--    --><?php //echo CHtml::form('','post',array('enctype'=>'multipart/form-data')); ?>
+<!--    --><?php //echo CHtml::activeFileField($model, 'image'); ?>
+<!--   --><?php ////echo CHtml::submitButton('Submit'); ?>
+<!--    --><?php //echo CHtml::endForm(); ?>
+    </div>
+
+
     <div class="row">
         <!--		--><?php //echo $form->labelEx($model,'environment'); ?>
         <!--		--><?php //echo $form->textArea($model,'environment',array('rows'=>6, 'cols'=>50)); ?>
