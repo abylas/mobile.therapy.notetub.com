@@ -90,6 +90,76 @@ class DnsController extends Controller
         return $lines;
     }
 
+    public function getCname()
+    {
+        $cname = $_POST['Dns']['cname'];
+
+        $tab = "\t";
+        $threetab = "\t\t\t";
+        $in = 'IN';
+        $a = 'A';
+        $semicolon = ';';
+        $ctag = "CNAME";
+
+        $split_cname_lines = explode("\n", $cname);
+        $lines = "";
+
+        foreach($split_cname_lines as $value) {
+            $val_split = explode(",", $value);
+            if (count($val_split) == 0) {
+                $lines = $lines . "\n";
+                continue;
+            } else {
+                $domain = $val_split[0];
+                $ip = isset($val_split[1]) ? $val_split[1] : "  ";
+                $cname_final = $domain . $threetab . $in . $tab . $ctag . $tab . $ip;
+                if(isset($val_split[1])) {
+                    $lines = $lines . $cname_final . "\n";
+                }
+                else
+                {
+                    $lines = $lines . "\n";
+                }
+            }
+        }
+        return $lines;
+    }
+
+    public function getMicro()
+    {
+        $micro = $_POST['Dns']['microservice'];
+
+        $tab = "\t";
+        $threetab = "\t\t\t";
+        $in = 'IN';
+        $a = 'A';
+        $semicolon = ';';
+        $ctag = "CNAME";
+
+        $split_micro_lines = explode("\n", $micro);
+        $lines = "";
+
+        foreach($split_micro_lines as $value) {
+            $val_split = explode(",", $value);
+            if (count($val_split) == 0) {
+                $lines = $lines . "\n";
+                continue;
+            } else {
+                $domain = $val_split[0];
+                $ip = isset($val_split[1]) ? $val_split[1] : "  ";
+                $micro_final = $domain . $threetab . $in . $tab . $ctag . $tab . $ip;
+                if(isset($val_split[1])) {
+                    $lines = $lines . $micro_final . "\n";
+                }
+                else
+                {
+                    $lines = $lines . "\n";
+                }
+            }
+        }
+        return $lines;
+    }
+
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
@@ -105,9 +175,15 @@ class DnsController extends Controller
 		{
 			$model->attributes=$_POST['Dns'];
 
-			$lines = $this->getArecord();
 
-			$model->arecord =  $lines ;
+			$model->arecord =  $this->getArecord();
+
+			if(isset($_POST['dns']['cname'])) {
+                $model->cname = $this->getCname();
+            }
+            if(isset($_POST['dns']['microservice'])) {
+                $model->microservice = $this->getMicro();
+            }
 
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
