@@ -11,23 +11,23 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'title'); ?>
-		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>128)); ?>
+		<?php echo $form->label($model,'environment'); ?>
+		<?php echo $form->textArea($model,'environment',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'content'); ?>
-		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->label($model,'arecord'); ?>
+		<?php echo $form->textArea($model,'arecord',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'tags'); ?>
-		<?php echo $form->textArea($model,'tags',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->label($model,'cname'); ?>
+		<?php echo $form->textArea($model,'cname',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'status'); ?>
-		<?php echo $form->textField($model,'status'); ?>
+		<?php echo $form->label($model,'microservice'); ?>
+		<?php echo $form->textArea($model,'microservice',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
 	<div class="row">
@@ -38,11 +38,6 @@
 	<div class="row">
 		<?php echo $form->label($model,'update_time'); ?>
 		<?php echo $form->textField($model,'update_time'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'author_id'); ?>
-		<?php echo $form->textField($model,'author_id'); ?>
 	</div>
 
 	<div class="row buttons">

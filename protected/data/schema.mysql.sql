@@ -8,16 +8,13 @@ CREATE TABLE tbl_user (
 CREATE TABLE tbl_dns
 (
 	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
-	title VARCHAR(128) NOT NULL,
-	content TEXT NOT NULL,
-	tags TEXT,
-	status INTEGER NOT NULL,
+	environment TEXT NOT NULL,
+	arecord TEXT,
+	cname TEXT,
+	microservice TEXT,
 	create_time INTEGER,
-	update_time INTEGER,
-	author_id INTEGER NOT NULL,
-	CONSTRAINT FK_post_author FOREIGN KEY (author_id)
-		REFERENCES tbl_user (id) ON DELETE CASCADE ON UPDATE RESTRICT
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+	update_time INTEGER
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 
 INSERT INTO tbl_user (username, password, email) VALUES ('test1', 'pass1', 'test1@example.com');

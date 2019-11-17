@@ -10,27 +10,27 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'title'); ?>
-		<?php echo $form->textField($model,'title',array('size'=>60,'maxlength'=>128)); ?>
-		<?php echo $form->error($model,'title'); ?>
+		<?php echo $form->labelEx($model,'environment'); ?>
+		<?php echo $form->textArea($model,'environment',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'environment'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->textArea($model,'content',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'content'); ?>
+		<?php echo $form->labelEx($model,'arecord'); ?>
+		<?php echo $form->textArea($model,'arecord',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'arecord'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'tags'); ?>
-		<?php echo $form->textArea($model,'tags',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'tags'); ?>
+		<?php echo $form->labelEx($model,'cname'); ?>
+		<?php echo $form->textArea($model,'cname',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'cname'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model,'status'); ?>
-		<?php echo $form->error($model,'status'); ?>
+		<?php echo $form->labelEx($model,'microservice'); ?>
+		<?php echo $form->textArea($model,'microservice',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'microservice'); ?>
 	</div>
 
 	<div class="row">
@@ -43,12 +43,6 @@
 		<?php echo $form->labelEx($model,'update_time'); ?>
 		<?php echo $form->textField($model,'update_time'); ?>
 		<?php echo $form->error($model,'update_time'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'author_id'); ?>
-		<?php echo $form->textField($model,'author_id'); ?>
-		<?php echo $form->error($model,'author_id'); ?>
 	</div>
 
 	<div class="row buttons">

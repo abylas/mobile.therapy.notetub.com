@@ -5,13 +5,12 @@
  *
  * The followings are the available columns in table '{{dns}}':
  * @property integer $id
- * @property string $title
- * @property string $content
- * @property string $tags
- * @property integer $status
+ * @property string $environment
+ * @property string $arecord
+ * @property string $cname
+ * @property string $microservice
  * @property integer $create_time
  * @property integer $update_time
- * @property integer $author_id
  */
 class Dns extends CActiveRecord
 {
@@ -40,13 +39,12 @@ class Dns extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, content, status, author_id', 'required'),
-			array('status, create_time, update_time, author_id', 'numerical', 'integerOnly'=>true),
-			array('title', 'length', 'max'=>128),
-			array('tags', 'safe'),
+			array('environment', 'required'),
+			array('create_time, update_time', 'numerical', 'integerOnly'=>true),
+			array('arecord, cname, microservice', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, content, tags, status, create_time, update_time, author_id', 'safe', 'on'=>'search'),
+			array('id, environment, arecord, cname, microservice, create_time, update_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -68,13 +66,12 @@ class Dns extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'content' => 'Content',
-			'tags' => 'Tags',
-			'status' => 'Status',
+			'environment' => 'Environment',
+			'arecord' => 'Arecord',
+			'cname' => 'Cname',
+			'microservice' => 'Microservice',
 			'create_time' => 'Create Time',
 			'update_time' => 'Update Time',
-			'author_id' => 'Author',
 		);
 	}
 
@@ -90,13 +87,12 @@ class Dns extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('title',$this->title,true);
-		$criteria->compare('content',$this->content,true);
-		$criteria->compare('tags',$this->tags,true);
-		$criteria->compare('status',$this->status);
+		$criteria->compare('environment',$this->environment,true);
+		$criteria->compare('arecord',$this->arecord,true);
+		$criteria->compare('cname',$this->cname,true);
+		$criteria->compare('microservice',$this->microservice,true);
 		$criteria->compare('create_time',$this->create_time);
 		$criteria->compare('update_time',$this->update_time);
-		$criteria->compare('author_id',$this->author_id);
 
 		return new CActiveDataProvider(get_class($this), array(
 			'criteria'=>$criteria,

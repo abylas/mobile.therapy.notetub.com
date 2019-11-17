@@ -4,20 +4,20 @@
 	<?php echo CHtml::link(CHtml::encode($data->id), array('view', 'id'=>$data->id)); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('title')); ?>:</b>
-	<?php echo CHtml::encode($data->title); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('environment')); ?>:</b>
+	<?php echo CHtml::encode($data->environment); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('content')); ?>:</b>
-	<?php echo CHtml::encode($data->content); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('arecord')); ?>:</b>
+	<?php echo CHtml::encode($data->arecord); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('tags')); ?>:</b>
-	<?php echo CHtml::encode($data->tags); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('cname')); ?>:</b>
+	<?php echo CHtml::encode($data->cname); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('status')); ?>:</b>
-	<?php echo CHtml::encode($data->status); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('microservice')); ?>:</b>
+	<?php echo CHtml::encode($data->microservice); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('create_time')); ?>:</b>
@@ -28,11 +28,5 @@
 	<?php echo CHtml::encode($data->update_time); ?>
 	<br />
 
-	<?php /*
-	<b><?php echo CHtml::encode($data->getAttributeLabel('author_id')); ?>:</b>
-	<?php echo CHtml::encode($data->author_id); ?>
-	<br />
-
-	*/ ?>
 
 </div>

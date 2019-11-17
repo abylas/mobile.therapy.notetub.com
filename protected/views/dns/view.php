@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs=array(
 	'Dns'=>array('index'),
-	$model->title,
+	$model->id,
 );
 
 $this->menu=array(
@@ -19,12 +19,11 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'title',
-		'content',
-		'tags',
-		'status',
+		'environment',
+		'arecord',
+		'cname',
+		'microservice',
 		'create_time',
 		'update_time',
-		'author_id',
 	),
 )); ?>
