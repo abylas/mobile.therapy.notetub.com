@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="ShipNotes">
+  <component name="PublishConfigData" serverName="DNS dashboard">
     <serverData>
+      <paths name="DNS dashboard">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="ShipNotes">
         <serverdata>
           <mappings>

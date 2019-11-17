@@ -1,0 +1,122 @@
+2019/11/16 19:06:12 [error] [exception.CException] CException: CAssetManager.basePath "C:\xampp\htdocs\shipnotes\assets" is invalid. Please make sure the directory exists and is writable by the Web server process. in C:\xampp\htdocs\yii\framework\web\CAssetManager.php:98
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CAssetManager.php(83): CAssetManager->setBasePath('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\yii\framework\web\CAssetManager.php(192): CAssetManager->getBasePath()
+#2 C:\xampp\htdocs\yii\framework\web\CClientScript.php(464): CAssetManager->publish('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CClientScript.php(317): CClientScript->getCoreScriptUrl()
+#4 C:\xampp\htdocs\yii\framework\web\CClientScript.php(197): CClientScript->renderCoreScripts()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(343): CClientScript->render('<!DOCTYPE html ...')
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->processOutput('<!DOCTYPE html ...')
+#7 C:\xampp\htdocs\shipnotes\protected\controllers\SiteController.php(92): CController->render('login', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(328): CController->run('login')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('site/login')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\shipnotes\index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/shipnotes/index.php/site/login
+2019/11/16 20:35:27 [error] [exception.CException] CException: CAssetManager.basePath "C:\xampp\htdocs\shipnotes\assets" is invalid. Please make sure the directory exists and is writable by the Web server process. in C:\xampp\htdocs\yii\framework\web\CAssetManager.php:98
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CAssetManager.php(83): CAssetManager->setBasePath('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\yii\framework\web\CAssetManager.php(192): CAssetManager->getBasePath()
+#2 C:\xampp\htdocs\yii\framework\web\CClientScript.php(464): CAssetManager->publish('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CClientScript.php(317): CClientScript->getCoreScriptUrl()
+#4 C:\xampp\htdocs\yii\framework\web\CClientScript.php(197): CClientScript->renderCoreScripts()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(343): CClientScript->render('<!DOCTYPE html ...')
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->processOutput('<!DOCTYPE html ...')
+#7 C:\xampp\htdocs\shipnotes\protected\controllers\SiteController.php(66): CController->render('contact', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(328): CController->run('contact')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('site/contact')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\shipnotes\index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/shipnotes/index.php/site/contact
+2019/11/16 23:41:15 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'dns' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:348
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(297): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(275): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(372): CDbConnection->init()
+#3 C:\xampp\htdocs\yii\framework\base\CModule.php(86): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii\framework\gii\generators\model\ModelCode.php(52): CModule->__get('db')
+#5 C:\xampp\htdocs\yii\framework\web\CFormModel.php(40): ModelCode->init()
+#6 C:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(149): CFormModel->__construct()
+#7 C:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(61): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(328): CController->run('')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('gii/model')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\dns\index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/dns/index.php?r=gii/model
+2019/11/16 23:42:18 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'dns' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:348
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(297): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(275): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(372): CDbConnection->init()
+#3 C:\xampp\htdocs\yii\framework\base\CModule.php(86): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii\framework\gii\generators\model\ModelCode.php(52): CModule->__get('db')
+#5 C:\xampp\htdocs\yii\framework\web\CFormModel.php(40): ModelCode->init()
+#6 C:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(149): CFormModel->__construct()
+#7 C:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(61): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(328): CController->run('')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('gii/model')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\dns\index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/dns/index.php?r=gii/model
+2019/11/16 23:42:29 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'dns' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:348
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(297): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(275): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(372): CDbConnection->init()
+#3 C:\xampp\htdocs\yii\framework\base\CModule.php(86): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii\framework\gii\generators\model\ModelCode.php(52): CModule->__get('db')
+#5 C:\xampp\htdocs\yii\framework\web\CFormModel.php(40): ModelCode->init()
+#6 C:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(149): CFormModel->__construct()
+#7 C:\xampp\htdocs\yii\framework\gii\CCodeGenerator.php(61): CCodeGenerator->prepare()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(328): CController->run('')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('gii/model')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\dns\index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/dns/index.php?r=gii/model
+2019/11/16 23:52:49 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "dns". in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('dns')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dns\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/dns/index.php?r=dns
+2019/11/16 23:53:04 [error] [exception.CHttpException.404] CHttpException: Unable to resolve the request "DNS". in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:332
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('DNS')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\dns\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/dns/index.php?r=DNS
+2019/11/17 01:11:51 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in C:\xampp\htdocs\yii\framework\web\CController.php:328
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1122): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(328): CController->run('delete')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(121): CWebApplication->runController('dns/delete')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(155): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\dns\index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/dns/index.php?r=dns/delete

@@ -1,9 +1,31 @@
+<?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+
 <?php
 $this->pageTitle=Yii::app()->name . ' - Contact Us';
 $this->breadcrumbs=array(
 	'Contact',
 );
 ?>
+
+<script type="text/javascript">
+
+$.ajax({
+ url:"http://1.notetub.com/ajax/post.php",
+ data:"name=Mickey&age=35",
+ type:"POST",
+ dataType:"json",	
+ success:function(data)
+ {
+ 	alert("Data from Server"+JSON.stringify(data));
+ },
+ error:function(jqXHR,textStatus,errorThrown)
+ {
+ 	alert("You can not send Cross Domain AJAX requests: "+errorThrown);
+ }
+});
+
+</script>
+
 
 <h1>Contact Us</h1>
 

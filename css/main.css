@@ -80,6 +80,12 @@ body
 	text-decoration:none;
 }
 
+
+#cname
+{
+
+}
+
 div.flash-error, div.flash-notice, div.flash-success
 {
 	padding:.8em;
@@ -227,3 +233,4 @@ div.search-form
 {
 	background: #80CFFF;
 }
+

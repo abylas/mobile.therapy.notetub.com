@@ -39,7 +39,7 @@ div.form
 }
 
 div.form input,
-div.form textarea,
+/*div.form textarea,*/
 div.form select
 {
 	margin: 0.2em 0 0.5em 0;
@@ -72,6 +72,8 @@ div.form .hint
 	color: #999;
 }
 
+
+
 div.form .note
 {
 	font-style: italic;
@@ -88,6 +90,8 @@ div.form span.error
 {
 	color: #C00;
 }
+
+
 
 div.form div.error input,
 div.form div.error textarea,
@@ -126,6 +130,20 @@ div.form .errorMessage
 	color: red;
 	font-size: 0.9em;
 }
+
+
+#arecord,#micro,#cname textarea
+{
+	height: 150px;
+	width: 480px;
+}
+
+#preview textarea
+{
+	height: 550px;
+	width: 550px;
+}
+
 
 div.form .errorSummary p
 {

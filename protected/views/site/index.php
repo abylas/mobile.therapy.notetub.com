@@ -1,33 +1,71 @@
 <?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
 <?php header("Access-Control-Allow-Origin: *"); ?>
 
+<h2> 3 step process - Make sure to check preview </h2>
 
-<script type="text/javascript">
-    // jQuery cross domain ajax
-//    $.get("http://test.notetub.com/notetub/index.php?r=user/login").done(function (data) {
-$.get("http://www.1.notetub.com/ajax/ajax.php").done( function (data) {
-    console.log(data['points']);
-//alert("data = " + JSON.stringify(data));
-//alert(JSON.stringify(data['points']));
-$('#points').html(data['points']);
+<h3> 1. Select Production Environment </h3>
 
-    });
-</script>
+<select>
+    <option value="CB">CB</option>
+    <option value="GP">GP</option>
+    <option value="RP">RP</option>
+    <option value="KP">KP</option>
+    <option value="YP">YP</option>
+    <option value="EP">EP</option>
+    <option value="RU">RU</option>
+    <option value="AP">AP</option>
+</select>
 
-<?php $this->pageTitle=Yii::app()->name; ?>
+<p>         </p>
+<p>         </p>
+<p>         </p>
+<p>         </p>
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
-
-<p>Congratulations! You now have saved <div id="points">10</div>points.</p>
+<h3> 2. Fill one or more of Arecord,cname, and microservice sections below </h3>
 
 
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <tt><?php echo __FILE__; ?></tt></li>
-	<li>Layout file: <tt><?php echo $this->getLayoutFile('main'); ?></tt></li>
-</ul>
+<p>         </p>
+<p>         </p>
 
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+
+<div id="arecord">
+<h6> A-Record </h6>
+    <textarea size="400" maxlength="400" placeholder="Enter pairs of FQDN, Ip Address, FQDN, Ip Address, and so on....?"
+              name="areecord" id="arecord" _vkenabled="true" spellcheck="false"></textarea>
+    <p>         </p>
+</div>
+
+<p>         </p>
+<p>         </p>
+
+<div id="cname">
+<h6> CNAME </h6>
+<!--<form>-->
+    <textarea size="400" maxlength="400" placeholder="Enter pairs of shortname, longname, shortname, longname and so on....?"
+              name="cname" id="cname" _vkenabled="true" spellcheck="false"></textarea>
+<p>         </p>
+</div>
+
+<p>         </p>
+<p>         </p>
+
+<div id="micro">
+<h6> MicroServices </h6>
+    <textarea size="400" maxlength="400" placeholder="Enter pairs of MicroService Name, FQDN, MicroService Name, FQDN and so on....?"
+              name="micro" id="micro" _vkenabled="true" spellcheck="false"></textarea>
+    <p>         </p>
+</div>
+
+<p>         </p>
+<p>         </p>
+
+<div id="preview">
+    <h3> 3. Preview and finalize generate File </h3>
+
+
+
+    <h6> Preview </h6>
+    <textarea size="400" maxlength="400"
+              name="micro" id="micro" _vkenabled="true" spellcheck="false"></textarea>
+    <p>         </p>
+</div>
