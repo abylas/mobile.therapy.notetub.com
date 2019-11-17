@@ -33,7 +33,8 @@
 
     <div class="row">
         <?php echo $form->labelEx($model,'arecord'); ?>
-        <?php echo $form->textArea($model,'arecord',array('rows'=>6, 'cols'=>50)); ?>
+        <?php echo $form->textArea($model,'arecord',array('rows'=>6, 'cols'=>50,
+            'placeholder'=>"No Blank lines allowed. Enter comma-separated pairs of (FQDN, IP address) followed by new-line characters at end of each line. \n Example: \n kafka,123.45.32.67 \n spark, 123.45.32.67" )); ?>
         <?php echo $form->error($model,'arecord'); ?>
     </div>
 
