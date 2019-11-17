@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9f1c0b3c-877d-4575-ac28-9114d89643be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/data/schema.mysql.sql" beforeDir="false" afterPath="$PROJECT_DIR$/protected/data/schema.mysql.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/models/Dns.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/models/Dns.php" afterDir="false" />
+    <list default="true" id="9f1c0b3c-877d-4575-ac28-9114d89643be" name="Default Changelist" comment="New CRUd and model matching DNS entries.">
       <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" beforeDir="false" afterPath="$PROJECT_DIR$/protected/runtime/application.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/protected/views/dns/_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/dns/_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/dns/_search.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/dns/_search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/dns/_view.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/dns/_view.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/dns/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/dns/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/dns/update.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/dns/update.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/protected/views/dns/view.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/dns/view.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected/views/dns/create.php" beforeDir="false" afterPath="$PROJECT_DIR$/protected/views/dns/create.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +25,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" selection-end-line="71" />
+            <state relative-caret-position="136">
+              <caret line="8" column="21" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -41,65 +34,79 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/data/schema.mysql.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="153">
+              <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+        <entry file="file://$PROJECT_DIR$/protected/views/dns/update.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state relative-caret-position="289">
+              <caret line="17" column="38" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/protected/models/Dns.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/dns/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/views/dns/view.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/dns/update.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/dns/index.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/dns/create.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="68" lean-forward="true" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+            <state relative-caret-position="207">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/views/dns/_form.php">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/protected/views/dns/create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="38" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="38" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/protected/controllers/DnsController.php">
+        <entry file="file://$PROJECT_DIR$/protected/views/dns/_search.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="71" column="30" lean-forward="true" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+            <state relative-caret-position="133">
+              <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/protected/views/dns/_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="61" selection-start-line="50" selection-end-line="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/dns/_view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/protected/views/dns/admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-31" />
           </provider>
         </entry>
       </file>
@@ -114,6 +121,7 @@
       <find>urlmana</find>
       <find>mysq</find>
       <find>author</find>
+      <find>_form</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,8 +136,9 @@
         <option value="$PROJECT_DIR$/protected/views/site/index.php" />
         <option value="$PROJECT_DIR$/protected/config/main.php" />
         <option value="$PROJECT_DIR$/protected/controllers/DnsController.php" />
-        <option value="$PROJECT_DIR$/protected/views/dns/create.php" />
         <option value="$PROJECT_DIR$/protected/data/schema.mysql.sql" />
+        <option value="$PROJECT_DIR$/protected/views/dns/create.php" />
+        <option value="$PROJECT_DIR$/protected/views/dns/_form.php" />
       </list>
     </option>
   </component>
@@ -172,6 +181,21 @@
               <item name="dns" type="b2602c69:ProjectViewProjectNode" />
               <item name="dns" type="462c0819:PsiDirectoryNode" />
               <item name="protected" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="DnsController.php" type="88303cf5:PhpFileNode" />
+            </path>
+            <path>
+              <item name="dns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dns" type="462c0819:PsiDirectoryNode" />
+              <item name="protected" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="DnsController.php" type="88303cf5:PhpFileNode" />
+              <item name="DnsController" type="e2efd96b:PhpElementNode" />
+            </path>
+            <path>
+              <item name="dns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dns" type="462c0819:PsiDirectoryNode" />
+              <item name="protected" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -179,21 +203,6 @@
               <item name="dns" type="462c0819:PsiDirectoryNode" />
               <item name="protected" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dns" type="462c0819:PsiDirectoryNode" />
-              <item name="protected" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="Dns.php" type="88303cf5:PhpFileNode" />
-            </path>
-            <path>
-              <item name="dns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dns" type="462c0819:PsiDirectoryNode" />
-              <item name="protected" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-              <item name="Dns.php" type="88303cf5:PhpFileNode" />
-              <item name="Dns" type="e2efd96b:PhpElementNode" />
             </path>
             <path>
               <item name="dns" type="b2602c69:ProjectViewProjectNode" />
@@ -261,19 +270,21 @@
       <workItem from="1573932643409" duration="6315000" />
       <workItem from="1573942269963" duration="4364000" />
       <workItem from="1573952354365" duration="1957000" />
-      <workItem from="1573955544710" duration="252000" />
+      <workItem from="1573955544710" duration="1243000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20913000" />
+    <option name="totallyTimeSpent" value="21904000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1292" height="702" extended-state="7" />
+    <frame x="-6" y="-6" width="1292" height="702" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5226481" visible="true" weight="0.22815534" />
-      <window_info id="Structure" order="1" sideWeight="0.4773519" side_tool="true" visible="true" weight="0.22815534" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5230126" visible="true" weight="0.22815534" />
+      <window_info id="Structure" order="1" sideWeight="0.47807932" side_tool="true" weight="0.22815534" />
       <window_info id="Favorites" order="2" side_tool="true" weight="0.32996634" />
+      <window_info anchor="bottom" id="Messages" visible="true" weight="0.16550523" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -295,6 +306,10 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="New CRUd and model matching DNS entries." />
+    <option name="LAST_COMMIT_MESSAGE" value="New CRUd and model matching DNS entries." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/protected/views/site/index-backup-CORS POST TEST.php">
@@ -346,13 +361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/config/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -360,43 +368,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/dns/view.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/dns/update.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/dns/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/dns/create.php">
+    <entry file="file://$PROJECT_DIR$/protected/models/Dns.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="68" lean-forward="true" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/dns/_form.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/data/schema.mysql.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/controllers/DnsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="71" column="30" lean-forward="true" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+        <state relative-caret-position="112">
+          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Dns.php">
+    <entry file="file://$PROJECT_DIR$/protected/data/schema.mysql.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        <state relative-caret-position="153">
+          <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/dns/_search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="33" column="47" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/dns/_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/dns/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/dns/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/dns/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/dns/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="21" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/dns/create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/dns/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="61" selection-start-line="50" selection-end-line="61" />
         </state>
       </provider>
     </entry>

@@ -10,10 +10,25 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'environment'); ?>
-		<?php echo $form->textArea($model,'environment',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'environment'); ?>
-	</div>
+<!--		--><?php //echo $form->labelEx($model,'environment'); ?>
+<!--		--><?php //echo $form->textArea($model,'environment',array('rows'=>6, 'cols'=>50)); ?>
+<!--		--><?php //echo $form->error($model,'environment'); ?>
+
+        <?php echo $form->labelEx($model,'environment'); ?>
+        <?php echo CHtml::dropDownList('environment', 'm',
+              array('CB' => 'CB',
+                  'GB' => 'GB',
+                  'RP' => 'RP',
+                  'KP' => 'KP',
+                  'YP' => 'YP',
+                  'EP' => 'EP',
+                  'RU' => 'RU',
+                  'AP' => 'AP'
+              ));?>
+
+    </div>
+
+
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'arecord'); ?>
@@ -33,17 +48,17 @@
 		<?php echo $form->error($model,'microservice'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'create_time'); ?>
-		<?php echo $form->textField($model,'create_time'); ?>
-		<?php echo $form->error($model,'create_time'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'update_time'); ?>
-		<?php echo $form->textField($model,'update_time'); ?>
-		<?php echo $form->error($model,'update_time'); ?>
-	</div>
+<!--	<div class="row">-->
+<!--		--><?php //echo $form->labelEx($model,'create_time'); ?>
+<!--		--><?php //echo $form->textField($model,'create_time'); ?>
+<!--		--><?php //echo $form->error($model,'create_time'); ?>
+<!--	</div>-->
+<!---->
+<!--	<div class="row">-->
+<!--		--><?php //echo $form->labelEx($model,'update_time'); ?>
+<!--		--><?php //echo $form->textField($model,'update_time'); ?>
+<!--		--><?php //echo $form->error($model,'update_time'); ?>
+<!--	</div>-->
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
