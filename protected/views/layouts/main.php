@@ -22,7 +22,7 @@
 <div class="container" id="page">
 
 	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+<!--		<div id="logo">--><?php //echo CHtml::encode(Yii::app()->name); ?><!--</div>-->
 	</div><!-- header -->
 
 	<div id="mainmenu">
@@ -45,9 +45,9 @@
 	<?php echo $content; ?>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> by Capgemini, Inc..<br/>
 		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
+<!--		--><?php //echo Yii::powered(); ?>
 	</div><!-- footer -->
 
 </div><!-- page -->
