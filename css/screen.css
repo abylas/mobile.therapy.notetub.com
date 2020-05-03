@@ -237,3 +237,22 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
 .clearfix:after, .container:after {content:"\0020";display:block;height:0;clear:both;visibility:hidden;overflow:hidden;}
 .clearfix, .container {display:block;}
 .clear {clear:both;}
+
+
+#newElement1
+{
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}
+
+div.dynamicbox{
+
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+}

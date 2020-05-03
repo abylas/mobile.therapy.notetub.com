@@ -7,6 +7,33 @@ body
 	background: #EFEFEF;
 }
 
+
+div.dynamicbox{
+	border-radius: 25px;
+	background: #7FDBFF;
+	/*border: 2px solid #73AD21;*/
+	padding: 20px;
+	margin-bottom: 100px; /* SIMPLY SET THIS PROPERTY AS MUCH AS YOU WANT. This changes the space below box1 */
+	text-align: justify;
+	width: 200px;
+	height: 150px;
+
+	top: 50%;
+	left: 50%;
+}
+
+.bigButton
+{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
 #page
 {
 	margin-top: 5px;
@@ -19,7 +46,14 @@ body
 {
 	margin: 0;
 	padding: 0;
-	border-top: 3px solid #C9E0ED;
+	background-image: url( 'caplogo.jpg' );
+	background-repeat: no-repeat;
+	height: 125px;
+
+	/*margin: 0;*/
+	/*padding: 0;*/
+	/*background-image: url( 'cap-logo.jpg' );*/
+	/*border-top: 3px solid #C9E0ED;*/
 }
 
 #content
