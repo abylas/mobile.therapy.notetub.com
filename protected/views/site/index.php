@@ -76,7 +76,10 @@
 
 <body style = "text-align:center;">
 
-
+<h1> You need to type sentences, and end them with periods/fullstops for this to work.
+    You can also use your voice buttons on keyboards to simply talk to Ava.
+    No need to type then.
+</h1>
 <textarea size="900" maxlength="900" placeholder="Enter your Title?"
           name="title" id="Note_title"
           rows = "10" cols="100"
@@ -99,40 +102,69 @@
 <script>
         function insert() {
 
-
-            $('<div class="dynamicbox" id = "'  + 1 + '">  ' +  "test 1"//value
-                + ' </div>').appendTo($('#parent'));
-
-
-            $('<div class="dynamicbox" id = "'  + 2 + '">  ' +  "test 2"//value
-                + ' </div>').appendTo($('#parent'));
-
-
-            $('<div class="dynamicbox" id = "'  + 3 + '">  ' +  "test 3"//value
-                + ' </div>').appendTo($('#parent'));
-
-
-
-
-            // var val = $.trim($("#Note_title").val());
-            // console.log(val);
+            // $('<div class="dynamicbox" id = "'  + 1 + '">  ' +  "test 1"//value
+            //     + ' </div>').appendTo($('#parent'));
             //
-            // var result = val.match( /[^\.!\?]+[\.!\?]+/g );
-            // var txt = "newElement";
+            //
+            // $('<div class="dynamicbox" id = "'  + 2 + '">  ' +  "test 2"//value
+            //     + ' </div>').appendTo($('#parent'));
+            //
+            //
+            // $('<div class="dynamicbox" id = "'  + 3 + '">  ' +  "test 3"//value
+            //     + ' </div>').appendTo($('#parent'));
+
+            var cars = ["Saab", "Volvo", "BMW"];
+            // var arr = {"red","blue"."green"};
+
+            var txt = "newElement";
+
+/*
+
+Top things I want Alice to do 
+ */
+
+            // $.each(cars, function(index,value){
+            //   // console.log("Javascript: " + value) ;
+            //   // Testing below ones...everything above this works
+            //         var ctr = index + 3;
+            //         var newid = txt + ctr;
+            //         console.log(value);
+            //
+            //         $('<div class="dynamicbox" id = "'  + newid + '">  '
+            //             +  value
+            //             + ' </div>')
+            //             .appendTo($('#parent'));
+            //
+            // });
+
+            var val = $.trim($("#Note_title").val())
+            // console.log(val);
+
+            // var result = val.split
+            //
+            var result = val.match( /[^\.!\?]+[\.!\?]+/g );
+            console.log(result);
+
+             var txt = "newElement";
             //
             //  result = JSON.parse(result);
             //  console.log(result);
             //
-            // $.each( result, function( index, value ){
-            // // for (var i = 0, len = val.length; i < len; i++) {
-            //     var ctr = ++i;
-            //     var newid = txt + ctr;
-            //     console.log(value);
-            //
-            //     $('<div class="dynamicbox" id = "'  + newid + '">  ' +  value
-            //         + ' </div>').appendTo($('#parent'));
-            //
-            // });
+            var arr = [];
+
+            $.each( result, function( index, value ){
+            // for (var i = 0, len = val.length; i < len; i++) {
+                var ctr = index + 1;
+                var newid = txt + ctr;
+                console.log(value);
+
+                arr[index] = '<div class="dynamicbox" id = "'  + newid + '">  ' +  value
+                    + ' </div>';
+
+                // $('<div class="dynamicbox" id = "'  + newid + '">  ' +  value
+                //     + ' </div>').prependTo($('#parent'));
+
+            });
 
 
         }
