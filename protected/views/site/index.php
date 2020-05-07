@@ -80,7 +80,7 @@
     You can also use your voice buttons on keyboards to simply talk to Ava.
     No need to type then.
 </h1>
-<textarea size="900" maxlength="900" placeholder="Enter your Title?"
+<textarea size="900" maxlength="900" placeholder="Enter your sentences using voice or keyboard. end all sentences with a fuill stop for this wo work. Press Insert to store individual sentences. "
           name="title" id="Note_title"
           rows = "10" cols="100"
           height = "900" width = "900">
@@ -89,14 +89,15 @@
 
 
 <h1 style = "color:green;" >
-    Voice and/or Text based Presenter on web
+    Voice and/or Text based Assistant / Therapist / Helper on web
 </h1>
 
-<div id="parent"></div>
 
 <button onclick="insert()">
     insert
 </button>
+
+<div id="parent"></div>
 
 <!-- Script to insert div element -->
 <script>
@@ -116,11 +117,11 @@
             var cars = ["Saab", "Volvo", "BMW"];
             // var arr = {"red","blue"."green"};
 
-            var txt = "newElement";
+             // var txt = "newElement";
 
 /*
 
-Top things I want Alice to do 
+Top things I want Alice to do
  */
 
             // $.each(cars, function(index,value){
@@ -140,31 +141,35 @@ Top things I want Alice to do
             var val = $.trim($("#Note_title").val())
             // console.log(val);
 
-            // var result = val.split
+             var result = val;
             //
-            var result = val.match( /[^\.!\?]+[\.!\?]+/g );
-            console.log(result);
-
+            //var result = val.match( /[^\.!\?]+[\.!\?]+/g );
+         console.log(result);
+var ix = 0;
              var txt = "newElement";
             //
             //  result = JSON.parse(result);
             //  console.log(result);
             //
             var arr = [];
+            var ctr = ix + 1;
+          var newid = txt + ctr;
+            $('<div class="dynamicbox" id = "'  + newid + '">  ' +  result
+                + ' </div>').prependTo($('#parent'));,
 
-            $.each( result, function( index, value ){
-            // for (var i = 0, len = val.length; i < len; i++) {
-                var ctr = index + 1;
-                var newid = txt + ctr;
-                console.log(value);
-
-                arr[index] = '<div class="dynamicbox" id = "'  + newid + '">  ' +  value
-                    + ' </div>';
-
-                // $('<div class="dynamicbox" id = "'  + newid + '">  ' +  value
-                //     + ' </div>').prependTo($('#parent'));
-
-            });
+//             $.each( result, function( index, value ){
+//             // for (var i = 0, len = val.length; i < len; i++) {
+//                 var ctr = index + 1;
+//                 var newid = txt + ctr;
+// //                console.log(value);
+//
+//              //   arr[index] = '<div class="dynamicbox" id = "'  + newid + '">  ' +  value
+//              //       + ' </div>';
+//
+//                  $('<div class="dynamicbox" id = "'  + newid + '">  ' +  value
+//                      + ' </div>').prependTo($('#parent'));
+//
+//             });
 
 
         }

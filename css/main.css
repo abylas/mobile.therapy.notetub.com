@@ -25,7 +25,7 @@ div.dynamicbox{
 	padding: 20px;
 	margin-bottom: 100px; /* SIMPLY SET THIS PROPERTY AS MUCH AS YOU WANT. This changes the space below box1 */
 	text-align: justify;
-	width: 200px;
+	width: 820px;
 	height: 150px;
 
 	top: 50%;
@@ -33,7 +33,7 @@ div.dynamicbox{
 
 display: block;
 	max-height: 200px;
-	max-width: 550px;
+
 	margin: 30px;
 	float: left;
 	font-size: 14px;
