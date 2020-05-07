@@ -7,6 +7,16 @@ body
 	background: #EFEFEF;
 }
 
+div.parent
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -50px;
+	width: 100px;
+	height: 100px;
+}
 
 div.dynamicbox{
 	border-radius: 25px;
@@ -19,8 +29,19 @@ div.dynamicbox{
 	height: 150px;
 
 	top: 50%;
-	left: 50%;
+	left: 50%;21
+
+display: block;
+	max-height: 200px;
+	max-width: 550px;
+	margin: 30px;
+	float: left;
+	font-size: 14px;
+	background-color: transparent;
+;
 }
+
+
 
 .bigButton
 {
