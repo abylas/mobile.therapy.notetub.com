@@ -1,3 +1,5 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <?php
 $this->breadcrumbs=array(
 	'Notes',
@@ -12,6 +14,6 @@ $this->menu=array(
 <h1>Notes</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
+	'dataProvider'=>$provider,
 	'itemView'=>'_view',
 )); ?>
