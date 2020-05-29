@@ -45,7 +45,7 @@
 	<?php echo $content; ?>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by Capgemini, Inc..<br/>
+		Copyright &copy; <?php echo date('Y'); ?> by NoteTub, Inc..<br/>
 		All Rights Reserved.<br/>
 <!--		--><?php //echo Yii::powered(); ?>
 	</div><!-- footer -->
