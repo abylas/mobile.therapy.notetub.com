@@ -95,7 +95,7 @@
 </h1>
 
 
-<button onclick="insert()">
+<button type="button" class="bigbutton" onclick="insert()">
     insert
 </button>
 
