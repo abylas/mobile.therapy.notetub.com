@@ -1,0 +1,13 @@
+deploy-checklist
+-check main.php-change-db-settings
+-change-index.php-to-correct-path-of-yii-directory
+-create-assets-folder-and-give-wrtie-permissions-0755-on-linux
+-
+
+
+
+
+
+mkdir assets 
+chmod 755 assets
+
