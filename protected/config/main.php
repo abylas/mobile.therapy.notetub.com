@@ -9,7 +9,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'AVA-by NoteTub Inc.',
+	'name'=>'AVA.notetub.com',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
