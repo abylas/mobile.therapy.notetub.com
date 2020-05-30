@@ -32,11 +32,6 @@ Press the button below, when you are done, to store individual sentences. "
 </textarea>
 
 
-<h1 style = "color:green;" >
-    Voice and/or Text based Assistant / Therapist / Helper on web
-</h1>
-
-
 
 <div id="parent"></div>
 
@@ -84,7 +79,7 @@ Top things I want Alice to do
 
              var result = val;
             //
-            //var result = val.match( /[^\.!\?]+[\.!\?]+/g );
+            var result = val.match( /[^\.!\?]+[\.!\?]+/g );
          console.log(result);
 var ix = 0;
              var txt = "newElement";
@@ -92,37 +87,46 @@ var ix = 0;
             //  result = JSON.parse(result);
             //  console.log(result);
             //
-            var arr = [];
-            var ctr = ix + 1;
-          var newid = txt + ctr;
-            $('<div class="dynamicbox" id = "'  + newid + '">  ' +  result
-                + ' </div>').prependTo($('#parent'));
 
-//             $.each( result, function( index, value ){
-//             // for (var i = 0, len = val.length; i < len; i++) {
-//                 var ctr = index + 1;
-//                 var newid = txt + ctr;
-// //                console.log(value);
-//
-//              //   arr[index] = '<div class="dynamicbox" id = "'  + newid + '">  ' +  value
-//              //       + ' </div>';
-//
-//                  $('<div class="dynamicbox" id = "'  + newid + '">  ' +  value
-//                      + ' </div>').prependTo($('#parent'));
-//
-//             });
+          //   var arr = [];
+          //   var ctr = ix + 1;
+          // var newid = txt + ctr;
+          //   $('<div class="dynamicbox" id = "'  + newid + '">  ' +  result
+          //       + ' </div>').prependTo($('#parent'));
+
+            $.each( result, function( index, value ){
+            // for (var i = 0, len = val.length; i < len; i++) {
+                var ctr = index + 1;
+                var newid = txt + ctr;
+//                console.log(value);
+
+             //   arr[index] = '<div class="dynamicbox" id = "'  + newid + '">  ' +  value
+             //       + ' </div>';
+
+                 $('<div class="dynamicbox" id = "'  + newid + '">  ' +  value
+                     + ' </div>').appendTo($('#parent'));
+
+            });
 
 
         }
 
 </script>
 
-<button type="button" class="bigbutton" onclick="insert()">
-    <!--    <a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">-->
 
-    Ava, Remember this!
+<button type="button" class="bigbutton" id="button1" onclick="insert()">
+    <!--    <a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">-->
+    Ava, Display that as individual notes!
 
     <!--    </a>-->
 </button>
+<button type="button" class="bigbutton" id ="button2" ">
+    <!--    <a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">-->
+
+
+Ava, Remember this!
+    <!--    </a>-->
+</button>
+
 
 </body>
