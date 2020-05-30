@@ -95,9 +95,6 @@
 </h1>
 
 
-<button type="button" class="bigbutton" onclick="insert()">
-    insert
-</button>
 
 <div id="parent"></div>
 
@@ -178,5 +175,12 @@ var ix = 0;
 
 </script>
 
+<button type="button" class="bigbutton" onclick="insert()">
+    <!--    <a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">-->
+
+    Tell notes to Ava
+
+    <!--    </a>-->
+</button>
 
 </body>
