@@ -47,7 +47,8 @@ display: block;
 	display: block;
 	width: 100%;
 	border: none;
-	background-color: #ed3330;/* #4CAF50; */
+	color: #ffffff;
+	background-color: #209CEE;   /*ed3330;  #4CAF50; */
 	padding: 14px 28px;
 	font-size: 16px;
 	cursor: pointer;
@@ -164,7 +165,8 @@ display: block;
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
-	color: #6399cd;
+	/*color: ; #6399cd;*/
+	color: #209CEE;
 	background-color:#EFF4FA;
 	text-decoration:none;
 }
