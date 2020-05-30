@@ -81,7 +81,7 @@ var ix = 0;
             var ctr = ix + 1;
           var newid = txt + ctr;
             $('<div class="dynamicbox" id = "'  + newid + '">  ' +  result
-                + ' </div>').prependTo($('#parent'));,
+                + ' </div>').prependTo($('#parent'));
 
 //             $.each( result, function( index, value ){
 //             // for (var i = 0, len = val.length; i < len; i++) {
