@@ -1,3 +1,10 @@
 assets
 /protected/runtime/application.log
 .idea
+/protected/views/layouts/favicon-32x32.png
+/protected/views/layouts/site.webmanifest
+/protected/views/layouts/android-chrome-192x192.png
+/protected/views/layouts/android-chrome-512x512.png
+/protected/views/layouts/apple-touch-icon.png
+/protected/views/layouts/favicon.ico
+/protected/views/layouts/favicon-16x16.png
