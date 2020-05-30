@@ -105,7 +105,7 @@ var ix = 0;
 <button type="button" class="bigbutton" onclick="insert()">
     <!--    <a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">-->
 
-    Tell notes to Ava
+    Talk to Ava
 
     <!--    </a>-->
 </button>

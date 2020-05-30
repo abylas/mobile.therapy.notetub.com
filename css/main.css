@@ -139,7 +139,8 @@ display: block;
 
 #mainmenu
 {
-	background:white url(bg.gif) repeat-x left top;
+	/*background:white url(bg.gif) repeat-x left top;*/
+	background: #209CEE;
 }
 
 #mainmenu ul
