@@ -51,7 +51,7 @@ return array(
 
         // uncomment the following to enable URLs in path-format
 
-        // VEENA's comments -  This needs to be commented for
+        // This needs to be commented for
 //        GII Code Generation tool to work.
 /*
 		'urlManager'=>array(
@@ -69,14 +69,39 @@ return array(
 		),
 		// uncomment the following to use a MySQL database
 
-		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=dns',
-			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => 'root',
-			'charset' => 'utf8',
+	/*development-settings
+                'db'=>array(
+                        'connectionString' => 'mysql:host=localhost;dbname=dns',
+                        'emulatePrepare' => true,
+                        'username' => 'root',
+                        'password' => 'root',
+                        'charset' => 'utf8',
             'tablePrefix' => 'tbl_',
-		),
+                ),
+
+*/
+/*working0test.notetub.com-settings
+
+                'db'=>array(
+                        'connectionString' => 'mysql:host=localhost;dbname=notetubc_notetub',
+            'emulatePrepare' => true,
+            'username' => 'notetubc_root',
+            'password' => 'root1',
+            'charset' => 'utf8',
+            'tablePrefix' => 'tbl_',
+                ),
+*/
+
+
+/*production-settings*/
+                'db'=>array(
+                        'connectionString' => 'mysql:host=localhost;dbname=notetubc_notetub',
+                        'emulatePrepare' => true,
+                        'username' => 'notetubc_root',
+                        'password' => 'root1',
+                        'charset' => 'utf8',
+            'tablePrefix' => 'tbl_',
+                ),
 
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
