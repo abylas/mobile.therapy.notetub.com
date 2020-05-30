@@ -5,15 +5,30 @@
 
 <body style = "text-align:center;">
 
-<h1> You need to type sentences, and end them with periods/fullstops for this to work.
+<h2 > You need to type sentences, and end them with periods/fullstops for this to work.
+</h2>
+<h2>
     You can also use your voice buttons on keyboards to simply talk to Ava.
-    No need to type then.
-</h1>
-<textarea size="900" maxlength="900" placeholder="Enter your sentences using voice or keyboard. end all sentences with a fuill stop for this wo work. Press Insert to store individual sentences. "
+No need to type then.
+</h2>
+
+<h2>Press the button "Ava, Remember this!" below when you are done talking.
+</h2>
+
+<h2>
+    This tells Ava to remember what you said. You might need it later, in a few seconds, minutres, hours, day, weeks , months or years.
+</h2>
+
+<h2>
+    Ava will remember for you. Trust her.
+</h2>
+<textarea size="900" maxlength="900"
+          placeholder="Enter your sentences using voice or keyboard.
+End all sentences with a full stop for this to work.
+Press the button below, when you are done, to store individual sentences. "
           name="title" id="Note_title"
           rows = "10" cols="100"
           height = "900" width = "900">
-
 </textarea>
 
 
@@ -105,7 +120,7 @@ var ix = 0;
 <button type="button" class="bigbutton" onclick="insert()">
     <!--    <a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">-->
 
-    Talk to Ava
+    Ava, Remember this!
 
     <!--    </a>-->
 </button>
