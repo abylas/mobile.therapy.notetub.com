@@ -248,11 +248,19 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
 /*    height: 150px;*/
 /*}*/
 
-div.dynamicbox{
+/*div.dynamicbox{*/
 
-    border-radius: 25px;
-    border: 2px solid #73AD21;
-    padding: 20px;
-    width: 200px;
-    height: 150px;
-}
+/*    !*border-radius: 25px;*!*/
+/*    !*border: 2px solid #209CEE; !*#73AD21;*!*!*/
+
+/*    !*color: #ffffff;*!*/
+/*    !*background-color: #209CEE;*!*/
+
+/*    background-color: black;*/
+/*    color: white;*/
+
+
+/*    !*padding: 20px;*!*/
+/*    width: 200px;*/
+/*    height: 150px;*/
+/*}*/

@@ -31,7 +31,9 @@ Press the button below, when you are done, to store individual sentences. "
           height = "900" width = "900">
 </textarea>
 
+<h1>
 
+</h1>
 
 <div id="parent"></div>
 
@@ -120,6 +122,11 @@ var ix = 0;
 
     <!--    </a>-->
 </button>
+
+<h1>
+
+</h1>
+
 <button type="button" class="bigbutton" id ="button2" ">
     <!--    <a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">-->
 

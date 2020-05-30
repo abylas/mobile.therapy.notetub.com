@@ -20,7 +20,12 @@ div.parent
 
 div.dynamicbox{
 	border-radius: 25px;
-	background: #7FDBFF;
+	border: 2px solid #209CEE;
+	color: white;
+	background-color: #209CEE;
+
+	font-weight: bold;
+
 	/*border: 2px solid #73AD21;*/
 	padding: 20px;
 	margin-bottom: 100px; /* SIMPLY SET THIS PROPERTY AS MUCH AS YOU WANT. This changes the space below box1 */
@@ -37,7 +42,7 @@ display: block;
 	margin: 30px;
 	float: left;
 	font-size: 14px;
-	background-color: transparent;
+	/*background-color: transparent;*/
 ;
 }
 
