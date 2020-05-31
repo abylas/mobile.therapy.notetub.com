@@ -1,0 +1,46 @@
+So, l;ooks like js for click is not working...
+
+2 options
+
+1. try note making using php part. and bring notes back to display using view or something..and display ...all by php
+
+2. debug javascript (not a preferable option.)
+
+--- also poduction needs to be merged onto master n then master to develop.....to ensure the db settings match everywhere
+
+and we need to create correct databases locally too...for this all to work ok...
+
+
+
+
+----
+
+so only 2 more steps needed now...
+
+- store notes
+- install 2 3 versions like ava,,,and ask people who they would love to talk to to, and they can post photos...
+and we make those public....so we can find out the most popular girl/boy/couple/teacher/inestor people want to tlk to
+
+
+--- modelling hunt
+
+instagram hnunt
+
+etc etc......we find models this way too...to give them popularity ...maybe...just a thought..for fun 
+
+---- another idea could be a quillbot alternative... where you say something and ava rephrases your words to sound better....
+
+ava + quillbot = Hot assistant that writes your articles by herself...and even tests multiple versions of them, through whatsapp
+chat insta etc...to see where you might succeed and what might succeed.....
+
+**** main thing is....i have to show like I am also giving away free entry to ava. and i give them logins, eithe rmine or 
+create more for them.....and put a price to ava, and i make it free for them......maybe even a limited offer.....
+
+********
+$$$$$$$$$$$$
+Looks great!!! almost working.....perfect colors.....just need to store and give logins away....
+generate logins...and give out unique ones.....which are limited in quantity 
+, so people should make their own..if they like the idea and register using their 
+phone and email....there will be job n business n entertainment opportunities for them if they do so..'
+.otherwise we reuse the logins for someone else more willing and deserving...
+
