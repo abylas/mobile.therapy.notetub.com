@@ -76,7 +76,7 @@ return array(
 		// uncomment the following to use a MySQL database
 
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=dns',
+			'connectionString' => 'mysql:host=localhost;dbname=notetubc_dns',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => 'root',
