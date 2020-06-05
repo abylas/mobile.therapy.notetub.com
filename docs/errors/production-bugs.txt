@@ -1,0 +1,6 @@
+On release of 8.1.0.1 , we foudn there to be a bug introduced within last 2 3 commits, 
+
+Error messages
+
+- CDbException
+Active record "User" is trying to select an invalid column "user.create_at". Note, the column must exist in the table or be an expression with alias.
