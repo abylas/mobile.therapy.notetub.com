@@ -78,7 +78,7 @@ return array(
 		
 /*production-settings*/
                 'db'=>array(
-                        'connectionString' => 'mysql:host=localhost;dbname=notetubc_notetub',
+                        'connectionString' => 'mysql:host=localhost;dbname=notetubc_dns',
                         'emulatePrepare' => true,
                         'username' => 'notetubc_root',
                         'password' => 'root1',

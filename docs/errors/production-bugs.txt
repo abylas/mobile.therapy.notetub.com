@@ -1,6 +1,19 @@
+hotfix 8.2.0.2
+
+- "Fixed severe production problem" - wrong database given. that database did not have correct user table.
+- updated error logs to reflect major changes
+- upgraded hotfix to reflect tag v-8.2.0.2
+
+
+-----
+
 On release of 8.1.0.1 , we foudn there to be a bug introduced within last 2 3 commits, 
 
 Error messages
 
 - CDbException
 Active record "User" is trying to select an invalid column "user.create_at". Note, the column must exist in the table or be an expression with alias.
+
+
+-----
+
