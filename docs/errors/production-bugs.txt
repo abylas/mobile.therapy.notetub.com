@@ -1,3 +1,37 @@
+-------
+hotfix 8.3.0.1
+
+
+Error
+
+
+Cannot access database , access not allowed
+
+
+PRoblem
+User notetubc_root did not have access rights for the correct DB n otetubc_dns
+
+
+
+---Solution 
+go to 
+
+https://az1-ss14.a2hosting.com:2083/cpsess2047692499/frontend/paper_lantern/sql/index.html#mysqlusers
+
+Or 
+
+cPanel > MySQL databases > Current databases
+
+And look for privileged users. If there are none, you need to add like this:
+
+
+Otherwise, simply upgrade the access rights.
+
+
+----
+
+
+
 hotfix 8.2.0.2
 
 - "Fixed severe production problem" - wrong database given. that database did not have correct user table.
