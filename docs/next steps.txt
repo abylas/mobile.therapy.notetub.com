@@ -1,0 +1,41 @@
+--- 
+
+features for Ava and notetub
+
+- next hotfix on server needs the user table to be changed...some columns need to be changed
+
+-- Also, for makign this popular
+
+
+-- in every field, we can send public tweets for people to controbute to notetub...and others can see in real time how
+easy or hard it might be for me to make their startup runn
+
+= we provide everything from scratch.....
+
+- some companies we show publicly, for makning this concept popular..
+
+--others we dont
+
+
+$$$
+---- also....
+we show 
+
+1. they can use my notetub and login using my own account...since i aam a sharing person
+
+2.we post places photos where people can claim they have been or wanna be in 
+
+3. we post photos of fields of work...where peolple can claim they work or not 
+-----make this simpler than linkedin and for the masses....
+---for specific ones to go in detsil...we provide more options
+--- hackathaons becomes worldwide and virtual 
+
+4. Celebertities make their notes and at first we dont see the,...n then theuy r revealed if and when they want
+
+-- idea is thst this way everyone can post and make their own place or claim some places we have made and make changes....and they
+do not have to face the people if idea fails....so easiest way to test their theory without setbacks to their reputations
+
+--- easy way to connect to users
+
+-- n investors and co founders and many more 
+
