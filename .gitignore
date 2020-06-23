@@ -8,3 +8,8 @@ assets
 /protected/views/layouts/apple-touch-icon.png
 /protected/views/layouts/favicon.ico
 /protected/views/layouts/favicon-16x16.png
+/.vs/ProjectSettings.json
+/.vs/VSWorkspaceState.json
+/.vs/dns/v15/.suo
+/.vs/slnx.sqlite
+/protected/runtime/state.bin

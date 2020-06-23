@@ -42,6 +42,7 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
             'loginUrl' => array('/user/login'),
+            'returnUrl' => array('/notes/create'),
 		),
 
 
@@ -57,7 +58,7 @@ return array(
 
         // uncomment the following to enable URLs in path-format
 
-        // VEENA's comments -  This needs to be commented for
+        // -  This needs to be commented for
 //        GII Code Generation tool to work.
 /*
 		'urlManager'=>array(
@@ -90,7 +91,11 @@ return array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',
         ),
+<<<<<<< HEAD
 		// commen to disable log
+=======
+//		/*
+>>>>>>> 558b63f703d6de1d978c526e905b58ab47103d85
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
@@ -106,8 +111,12 @@ return array(
 
 			),
 		),
+<<<<<<< HEAD
 		
 		//
+=======
+//		*/
+>>>>>>> 558b63f703d6de1d978c526e905b58ab47103d85
 	),
 
 	// application-level parameters that can be accessed

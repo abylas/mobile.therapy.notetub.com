@@ -1,3 +1,14 @@
+Add ava
+site's main page to  
+notesController and show and add notes throug there
+
+notes view should have http://ava.notetub.com/index.php?r=site/index contents too...along with notes
+6
+and the rest will be handled by notes create to make notes...from the site index's create button....
+
+
+
+
 --- 
 
 features for Ava and notetub
