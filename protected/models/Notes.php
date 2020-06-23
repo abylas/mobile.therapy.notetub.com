@@ -37,7 +37,8 @@ class Notes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-//			array('name, status, create_time, update_time', 'safe'),
+            array('name', 'safe'),
+		    //			array('name, status, create_time, update_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, name, status, create_time, update_time', 'safe', 'on'=>'search'),
