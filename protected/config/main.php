@@ -90,7 +90,7 @@ return array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',
         ),
-		/*
+//		/*
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
@@ -106,7 +106,7 @@ return array(
 
 			),
 		),
-		*/
+//		*/
 	),
 
 	// application-level parameters that can be accessed
