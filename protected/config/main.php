@@ -42,6 +42,7 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
             'loginUrl' => array('/user/login'),
+            'returnUrl' => array('/notes/create'),
 		),
 
 
@@ -57,7 +58,7 @@ return array(
 
         // uncomment the following to enable URLs in path-format
 
-        // VEENA's comments -  This needs to be commented for
+        // -  This needs to be commented for
 //        GII Code Generation tool to work.
 /*
 		'urlManager'=>array(
