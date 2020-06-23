@@ -1,1 +1,2 @@
+hotfix-9.2.0.1 - Fixed issues in app, caused by erroneous text added due to merge conflicts on the prodcution server, in the file protected/config/main.php
 Release-9.1.0.1 - released version with notes and header on top to create notes.

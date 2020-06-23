@@ -91,11 +91,7 @@ return array(
 			// use 'site/error' action to display errors
             'errorAction'=>'site/error',
         ),
-<<<<<<< HEAD
 		// commen to disable log
-=======
-//		/*
->>>>>>> 558b63f703d6de1d978c526e905b58ab47103d85
 		'log'=>array(
 			'class'=>'CLogRouter',
 			'routes'=>array(
@@ -111,12 +107,8 @@ return array(
 
 			),
 		),
-<<<<<<< HEAD
 		
 		//
-=======
-//		*/
->>>>>>> 558b63f703d6de1d978c526e905b58ab47103d85
 	),
 
 	// application-level parameters that can be accessed
