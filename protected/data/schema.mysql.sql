@@ -32,6 +32,7 @@ CREATE TABLE tbl_notes
     id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
     name TEXT,
     status TEXT,
+    tags TEXT,
     create_time DATETIME,
     update_time DATETIME
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
