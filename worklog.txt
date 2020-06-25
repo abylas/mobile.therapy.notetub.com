@@ -1,0 +1,1 @@
+Done - Add “tags“ to the database using sql or some sql tool, both in development and production
