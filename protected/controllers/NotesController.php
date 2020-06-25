@@ -109,17 +109,17 @@ class NotesController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		if(Yii::app()->request->isPostRequest)
-		{
+//		if(Yii::app()->request->isPostRequest)
+//		{
 			// we only allow deletion via POST request
 			$this->loadModel($id)->delete();
 
 			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 			if(!isset($_GET['ajax']))
 				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-		}
-		else
-			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
+//		}
+//		else
+//			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
 	}
 
 	/**
@@ -127,10 +127,29 @@ class NotesController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Notes');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
+
+	    // PREVIOUSLY GENERATED CODE Before featuere update for tags
+	    //		$dataProvider=new CActiveDataProvider('Notes');
+//		$this->render('index',array(
+//			'dataProvider'=>$dataProvider,
+//		));
+        $criteria=new CDbCriteria(array(
+            'order'=>'update_time DESC',
+//            'with'=>'commentCount',
+        ));
+        if(isset($_GET['tag']))
+            $criteria->addSearchCondition('tags',$_GET['tag']);
+
+        $dataProvider=new CActiveDataProvider('Notes', array(
+            'pagination'=>array(
+                'pageSize'=>Yii::app()->params['notesPerPage'],
+            ),
+            'criteria'=>$criteria,
+        ));
+
+        $this->render('index',array(
+            'dataProvider'=>$dataProvider,
+        ));
 	}
 
 	/**
@@ -147,6 +166,20 @@ class NotesController extends Controller
 			'model'=>$model,
 		));
 	}
+
+    /**
+     * Suggests tags based on the current user input.
+     * This is called via AJAX when the user is entering the tags input.
+     */
+    public function actionSuggestTags()
+    {
+        if(isset($_GET['q']) && ($keyword=trim($_GET['q']))!=='')
+        {
+            $tags=Tag::model()->suggestTags($keyword);
+            if($tags!==array())
+                echo implode("\n",$tags);
+        }
+    }
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
