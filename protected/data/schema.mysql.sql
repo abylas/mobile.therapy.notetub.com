@@ -37,6 +37,13 @@ CREATE TABLE tbl_notes
     update_time DATETIME
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+CREATE TABLE tbl_tag
+(
+	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(128) NOT NULL,
+	frequency INTEGER DEFAULT 1
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
 
 CREATE TABLE tbl_company
 (
@@ -136,6 +143,11 @@ CREATE TABLE `tbl_profiles_fields` (
                                        KEY `varname` (`varname`,`widget`,`visible`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
+
+
+INSERT INTO tbl_tag (name) VALUES ('yii');
+INSERT INTO tbl_tag (name) VALUES ('blog');
+INSERT INTO tbl_tag (name) VALUES ('test');
 
 INSERT INTO `tbl_users` (`id`, `username`, `password`, `email`, `activkey`, `superuser`, `status`) VALUES
 (1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'webmaster@example.com', '9a24eff8c15a6a141ece27eb6947da0f', 1, 1),
