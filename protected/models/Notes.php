@@ -28,6 +28,15 @@ class Notes extends CActiveRecord
 		return parent::model($className);
 	}
 
+//    public function behaviors(){
+//        return array(
+//            'CTimestampBehavior' => array(
+//                'class' => 'zii.behaviors.CTimestampBehavior',
+//                'createAttribute' => 'create_time',
+//                'updateAttribute' => 'update_time',
+//            ));
+//    }
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -35,6 +44,15 @@ class Notes extends CActiveRecord
 	{
 		return '{{notes}}';
 	}
+
+//    public function behaviors(){
+//        return array('CTimestampBehavior'=>array(
+//            'class' => 'zii.behaviors.CTimestampBehavior',
+//            'createAttribute' => 'create_time',
+//            'updateAttribute' => 'update_time',
+//            'setUpdateOnCreate' => true,
+//        ));
+//    }
 
 	/**
 	 * @return array validation rules for model attributes.
@@ -130,11 +148,11 @@ class Notes extends CActiveRecord
         {
             if($this->isNewRecord)
             {
-                $this->create_time=$this->update_time=time();
+                $this->create_time=$this->update_time=new CDbExpression('NOW()'); //new CDbExpression('NOW()');   //time();
 //                $this->author_id=Yii::app()->user->id;
             }
             else
-                $this->update_time=time();
+                $this->update_time= new CDbExpression('NOW()'); //new CDbExpression('NOW()'); //time();
             return true;
         }
         else
