@@ -7,7 +7,10 @@
 <!--    </div>-->
     <div class="name">
         <?php
-        $this->beginWidget('CMarkdown', array('purifyOutput'=>true));
+        $this->beginWidget('CMarkdown'
+//            ,
+//            array('purifyOutput'=>true)
+        );
         echo $data->name;
 //        content;
         $this->endWidget();
