@@ -72,6 +72,23 @@ foreach($tags as $tag=>$weight)
 <br>
 <p></p>
 
+<?php
+
+$tags=Tag::model()->findTagWeights(500);
+
+foreach($tags as $tag=>$weight)
+{
+    $link=CHtml::link(CHtml::encode($tag), array('notes/index','tag'=>$tag));
+    echo CHtml::tag('span', array(
+            'class'=>'tag',
+            'style'=>"font-size:15pt",
+//            'style'=>"font-size:{$weight}pt",
+        ), $link)."\n";
+}
+?>
+
+
+
 <h1>Create Notes</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
