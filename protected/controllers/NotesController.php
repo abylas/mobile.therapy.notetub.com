@@ -70,7 +70,7 @@ class NotesController extends Controller
 		{
 			$model->attributes=$_POST['Notes'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('create','id'=>$model->id));
 		}
 
 		$this->render('create',array(
