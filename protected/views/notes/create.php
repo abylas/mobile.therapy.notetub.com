@@ -89,6 +89,42 @@ foreach($tags as $tag=>$weight)
 
 
 
+
+
+
+<div class="hiddenCB">
+    <h3>Make your choice(s)</h3>
+    <div>
+        <input type="checkbox" name="choice" id="cb1" /><label for="cb1">Choice A</label>
+        <input type="checkbox" name="choice" id="cb2" /><label for="cb2">Choice B</label>
+        <input type="checkbox" name="choice" id="cb3" /><label for="cb3">Choice C</label>
+        <input type="checkbox" name="choice" id="cb4" /><label for="cb4">Choice D</label>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 <h1>Create Notes</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+
+
+<?php if(!empty($_GET['tag'])): ?>
+    <h1>Notes Tagged with <i><?php echo CHtml::encode($_GET['tag']); ?></i></h1>
+<?php endif; ?>
+
+<?php $this->widget('zii.widgets.CListView', array(
+    'dataProvider'=>$dataProvider,
+    'itemView'=>'_view',
+    'template'=>"{items} \n{pager}",
+)); ?>
+
