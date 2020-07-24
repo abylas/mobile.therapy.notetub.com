@@ -26,15 +26,15 @@ $this->menu=array(
 
 $tags=Tag::model()->findTagWeights(500);
 
-//foreach($tags as $tag=>$weight)
-//{
-//    $link=CHtml::link(CHtml::encode($tag), array('notes/index','tag'=>$tag));
-//    echo CHtml::tag('span', array(
-//            'class'=>'tag',
-//            'style'=>"font-size:15pt",
-////            'style'=>"font-size:{$weight}pt",
-//        ), $link)."\n";
-//}
+foreach($tags as $tag=>$weight)
+{
+    $link=CHtml::link(CHtml::encode($tag), array('notes/index','tag'=>$tag));
+    echo CHtml::tag('span', array(
+            'class'=>'tag',
+            'style'=>"font-size:15pt",
+//            'style'=>"font-size:{$weight}pt",
+        ), $link)."\n";
+}
 ?>
 
 <!--<h1>Manage Notes</h1>-->
@@ -72,13 +72,23 @@ $tags=Tag::model()->findTagWeights(500);
 <br>
 <p></p>
 
+<div class="hiddenCB">
+    <h3>Make your choice(s)</h3>
+    <div>
 <?php
 
 $tags=Tag::model()->findTagWeights(500);
-
+$counter = 0;
 foreach($tags as $tag=>$weight)
-{
-    
+{$counter++;
+    echo "<input type='checkbox' name='choice' id='tag" .$counter. "'/><label for='tag".$counter."'>";
+echo $tag;
+echo        "</label>";
+//
+//    echo"<input type='checkbox' name='PLJan'";
+//if (isset($_POST['PLJan'])) { echo " value='checked'"; }
+//echo $row->PLJan . "/> January ";
+
 //    $link=CHtml::link(CHtml::encode($tag), array('notes/index','tag'=>$tag));
 //    echo CHtml::tag('span', array(
 //            'class'=>'tag',
@@ -88,21 +98,24 @@ foreach($tags as $tag=>$weight)
 }
 ?>
 
-
-
-
-
-
-<div class="hiddenCB">
-    <h3>Make your choice(s)</h3>
-    <div>
-        <input type="checkbox" name="choice" id="cb1" /><label for="cb1">Choice A</label>
-        <input type="checkbox" name="choice" id="cb2" /><label for="cb2">Choice B</label>
-        <input type="checkbox" name="choice" id="cb3" /><label for="cb3">Choice C</label>
-        <input type="checkbox" name="choice" id="cb4" /><label for="cb4">Choice D</label>
-
     </div>
 </div>
+
+
+
+
+
+<!---->
+<!--<div class="hiddenCB">-->
+<!--    <h3>Make your choice(s)</h3>-->
+<!--    <div>-->
+<!--        <input type="checkbox" name="choice" id="cb1" /><label for="cb1">Choice A</label>-->
+<!--        <input type="checkbox" name="choice" id="cb2" /><label for="cb2">Choice B</label>-->
+<!--        <input type="checkbox" name="choice" id="cb3" /><label for="cb3">Choice C</label>-->
+<!--        <input type="checkbox" name="choice" id="cb4" /><label for="cb4">Choice D</label>-->
+<!---->
+<!--    </div>-->
+<!--</div>-->
 
 
 
