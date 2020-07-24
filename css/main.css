@@ -120,6 +120,9 @@ display: block;
 #content
 {
     padding: 20px;
+	/*zoom: 2;*/
+	/*-moz-transform: scale(2);*/
+	/*-moz-transform-origin: 0 0;*/
 }
 
 #sidebar
@@ -345,6 +348,34 @@ label {
 	line-height: 190%;
 	outline-style: none;
 	transition: all .6s;
+}
+.tag a {
+	/*padding: 4px 6px;*/
+	/*line-height: 190%;*/
+	/*outline-style: none;*/
+	/*transition: all .6s;*/
+
+	padding: 10px 20px;
+	border-radius: 2em;
+	line-height: 16px;
+	height: 16px;
+	font-size: 14px;
+	font-weight: 900;
+	text-decoration: none;
+
+	display: inline-block;
+	margin: 5px 15px 5px 0;
+	border: 2px solid #00c3bd;
+	/*outline: 4px red;*/
+	/*outline-offset: 5px;*/
+}
+
+
+.tag a:hover {
+	background: #80CFFF;
+	color: white;
+
+	/*background: rgba(0, 128, 128, .8);*/
 }
 
 .hiddenCB div {

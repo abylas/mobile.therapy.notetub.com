@@ -26,15 +26,15 @@ $this->menu=array(
 
 $tags=Tag::model()->findTagWeights(500);
 
-foreach($tags as $tag=>$weight)
-{
-    $link=CHtml::link(CHtml::encode($tag), array('notes/index','tag'=>$tag));
-    echo CHtml::tag('span', array(
-            'class'=>'tag',
-            'style'=>"font-size:15pt",
-//            'style'=>"font-size:{$weight}pt",
-        ), $link)."\n";
-}
+//foreach($tags as $tag=>$weight)
+//{
+//    $link=CHtml::link(CHtml::encode($tag), array('notes/index','tag'=>$tag));
+//    echo CHtml::tag('span', array(
+//            'class'=>'tag',
+//            'style'=>"font-size:15pt",
+////            'style'=>"font-size:{$weight}pt",
+//        ), $link)."\n";
+//}
 ?>
 
 <!--<h1>Manage Notes</h1>-->
@@ -78,12 +78,13 @@ $tags=Tag::model()->findTagWeights(500);
 
 foreach($tags as $tag=>$weight)
 {
-    $link=CHtml::link(CHtml::encode($tag), array('notes/index','tag'=>$tag));
-    echo CHtml::tag('span', array(
-            'class'=>'tag',
-            'style'=>"font-size:15pt",
-//            'style'=>"font-size:{$weight}pt",
-        ), $link)."\n";
+    
+//    $link=CHtml::link(CHtml::encode($tag), array('notes/index','tag'=>$tag));
+//    echo CHtml::tag('span', array(
+//            'class'=>'tag',
+//            'style'=>"font-size:15pt",
+////            'style'=>"font-size:{$weight}pt",
+//        ), $link)."\n";
 }
 ?>
 
