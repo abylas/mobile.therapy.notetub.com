@@ -421,7 +421,7 @@ label {
 
 .hiddenCB input[type="checkbox"]+label:hover{
 	/*background: rgba(0, 128, 128, .8);*/
-	background:rgba(128, 207, 255, .8);
+	background:rgba(128, 207, 255, .9);
 
 	/*background: #80CFFF;*/
 	color: white;
@@ -443,7 +443,7 @@ label {
 .hiddenCB input[type="checkbox"]:checked+label {
 	/*background: rgba(0, 128, 128, .4);*/
 
-	background:rgba(128, 207, 255, .9);
+	background:rgba(128, 207, 255, .5);
 	/*background: #80CFFF;*/
 	color: white;
 
@@ -463,7 +463,7 @@ label {
 
 .hiddenCB input[type="checkbox"]:checked+label:hover{
 	/*background: rgba(0, 128, 128, 0, .7);*/
-	background:rgba(128, 207, 255, .6);
+	background:rgba(128, 207, 255,.7);
 	color: white;
 
 
