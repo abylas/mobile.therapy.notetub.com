@@ -355,19 +355,36 @@ label {
 	/*outline-style: none;*/
 	/*transition: all .6s;*/
 
+	/*padding: 5px 10px;*/
+	/*!*border-radius: 2em;*!*/
+	/*line-height: 15px;*/
+	/*height: 10px;*/
+	/*font-size: 14px;*/
+	/*font-weight: 900;*/
+	/*text-decoration: none;*/
+
 	padding: 10px 20px;
 	border-radius: 2em;
 	line-height: 16px;
 	height: 16px;
-	font-size: 14px;
-	font-weight: 900;
-	text-decoration: none;
+	/*display: inline-block;*/
+
+	margin: 5px 15px 5px 0;
 
 	display: inline-block;
-	margin: 5px 15px 5px 0;
-	border: 2px solid #80CFFF;
+	margin: 6px 10px 6px 0;
+	border: 2px solid p;
 	/*outline: 4px red;*/
 	/*outline-offset: 5px;*/
+
+	/*padding: 10px 20px;*/
+	/*border-radius: 2em;*/
+	/*line-height: 16px;*/
+	/*height: 16px;*/
+	/*display: inline-block;*/
+
+	margin: 5px 15px 5px 0;
+
 }
 
 

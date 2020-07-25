@@ -28,12 +28,12 @@ $tags=Tag::model()->findTagWeights(500);
 
 foreach($tags as $tag=>$weight)
 {
-    $link=CHtml::link(CHtml::encode($tag), array('notes/index','tag'=>$tag));
-    echo CHtml::tag('span', array(
-            'class'=>'tag',
-            'style'=>"font-size:15pt",
+//    $link=CHtml::link(CHtml::encode($tag), array('notes/index','tag'=>$tag));
+//    echo CHtml::tag('span', array(
+//            'class'=>'tag',
+//            'style'=>"font-size:15pt",
 //            'style'=>"font-size:{$weight}pt",
-        ), $link)."\n";
+//        ), $link)."\n";
 }
 ?>
 
@@ -73,7 +73,7 @@ foreach($tags as $tag=>$weight)
 <p></p>
 
 <div class="hiddenCB">
-    <h3>Make your choice(s)</h3>
+    <h3>Mark your note </h3>
     <div>
 <?php
 
