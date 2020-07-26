@@ -497,3 +497,17 @@ label {
 	margin: 5px 15px 5px 0;
 	border: 2px solid #80CFFF;
 }
+
+
+input[type=button], input[type=submit], input[type=reset] {
+
+	background-color: #80CFFF;
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 2px;
+	cursor: pointer;
+
+
+}

@@ -1,5 +1,88 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<?php Yii::app()->clientScript->registerCoreScript('jquery'); ?>
+<?php header("Access-Control-Allow-Origin: *"); ?>
+
+
+<script>
+
+    $(document).ready(function() {
+        // alert("Checked");
+        //set initial state.
+        // $('#hiddenbCB div input').val(this.checked);
+
+        $(':checkbox').change(function() {
+            if(this.checked) {
+                // alert("checked";)
+                // var returnVal = confirm("Are you sure?");
+                // $(this).prop("checked", returnVal);
+
+                var t = this.labels[0].innerText;
+                //$(this).text(); //$(this).label();
+                console.log(t);
+                var tags = $('#Notes_tags').val();
+
+
+                if (tags == null || tags.length==0 || tags == '') {
+                    var newTags = t;
+                    $('#Notes_tags').val(newTags);
+                }
+                else {
+                    var newTags = tags + ", " + t;
+                    $('#Notes_tags').val(newTags);
+                }
+
+                console.log(newTags);
+                //
+            }
+            else
+            {
+                // alert("unchecked");
+                var t = this.labels[0].innerText;
+                var tags = $('#Notes_tags').val();
+
+                $('#Notes_tags').val(tags.replace(', '+ t, ''));
+
+
+            }
+
+            // $('#textbox1').val(this.checked);
+        });
+    });
+
+
+    // function insert() {
+    //
+    //     alert("button clicked ");
+    //
+    //     var elementClicked;
+    //
+    //     $(".hiddenCB div #tag1").change(function() {
+    //         if(this.checked) {
+    //             //Do stuff
+    //             alert("element CHECKED");
+    //
+    //         }
+    //         else{
+    //             alert("element NOT CHECKED");
+    //
+    //         }
+    //     });
+    //     //
+    //     // $("#tag1").click(function(){
+    //     //     elementClicked = true;
+    //     // });
+    //     // if( elementClicked != true ) {
+    //     //     alert("element not clicked");
+    //     // }else{
+    //     //     alert("element clicked");
+    //     // }
+    //
+    // }
+
+</script>
+
+
 <?php
 $this->breadcrumbs=array(
 	'Notes'=>array('index'),
@@ -22,7 +105,15 @@ $this->menu=array(
 //);
 ?>
 
+<!--<button type="button" class="bigbutton" id="button1" onclick="insert()">-->
+<!--    Ava, Display that as individual notes!-->
+<!---->
+<!--</button>-->
+
+
+
 <?php
+
 
 $tags=Tag::model()->findTagWeights(500);
 
@@ -81,7 +172,7 @@ $tags=Tag::model()->findTagWeights(500);
 $counter = 0;
 foreach($tags as $tag=>$weight)
 {$counter++;
-    echo "<input type='checkbox' name='choice' id='tag" .$counter. "'/><label for='tag".$counter."'>";
+    echo "<input type='checkbox' name='choice' id='tag" .$counter. "' onclick=insert()/><label for='tag".$counter."'>";
 echo $tag;
 echo        "</label>";
 //
@@ -141,4 +232,5 @@ echo        "</label>";
     'itemView'=>'_view',
     'template'=>"{items} \n{pager}",
 )); ?>
+
 

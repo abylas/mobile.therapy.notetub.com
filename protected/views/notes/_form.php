@@ -5,7 +5,7 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+<!--	<p class="note">Fields with <span class="required">*</span> are required.</p>-->
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -24,7 +24,7 @@
             'multiple'=>true,
             'htmlOptions'=>array('size'=>50),
         )); ?>
-        <p class="hint">Please separate different tags with commas.</p>
+<!--        <p class="hint">Please separate different tags with commas.</p>-->
         <?php echo $form->error($model,'tags'); ?>
     </div>
 
