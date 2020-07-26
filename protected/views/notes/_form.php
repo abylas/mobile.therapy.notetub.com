@@ -19,6 +19,7 @@
         <?php echo $form->labelEx($model,'tags'); ?>
         <?php $this->widget('CAutoComplete', array(
             'model'=>$model,
+//            'canSetProperty'=> 'false',
             'attribute'=>'tags',
             'url'=>array('suggestTags'),
             'multiple'=>true,

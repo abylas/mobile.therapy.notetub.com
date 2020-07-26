@@ -29,7 +29,46 @@ class SiteController extends Controller
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		// $this->render('index');
+
+        $this->redirect(array('notes/create'));
+
+        /*$model=new Notes;
+
+        // Uncomment the following line if AJAX validation is needed
+        // $this->performAjaxValidation($model);
+
+        if(isset($_POST['Notes']))
+        {
+            $model->attributes=$_POST['Notes'];
+            if($model->save())
+                $this->redirect(array('view','id'=>$model->id));
+        }
+
+
+        $criteria=new CDbCriteria(array(
+            'order'=>'update_time DESC',
+//            'with'=>'commentCount',
+        ));
+        if(isset($_GET['tag']))
+            $criteria->addSearchCondition('tags',$_GET['tag']);
+
+        $dataProvider=new CActiveDataProvider('Notes', array(
+            'pagination'=>array(
+                'pageSize'=>Yii::app()->params['notesPerPage'],
+            ),
+            'criteria'=>$criteria,
+        ));
+
+
+        $this->render('notes/create',array(
+            'model'=>$model,
+            'dataProvider'=>$dataProvider,
+
+        ));
+*/
+
+
 	}
 
 	/**
