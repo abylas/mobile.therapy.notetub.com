@@ -73,8 +73,26 @@ class NotesController extends Controller
 				$this->redirect(array('create','id'=>$model->id));
 		}
 
+
+        $criteria=new CDbCriteria(array(
+            'order'=>'update_time DESC',
+//            'with'=>'commentCount',
+        ));
+        if(isset($_GET['tag']))
+            $criteria->addSearchCondition('tags',$_GET['tag']);
+
+        $dataProvider=new CActiveDataProvider('Notes', array(
+            'pagination'=>array(
+                'pageSize'=>Yii::app()->params['notesPerPage'],
+            ),
+            'criteria'=>$criteria,
+        ));
+
+
 		$this->render('create',array(
 			'model'=>$model,
+            'dataProvider'=>$dataProvider,
+
 		));
 	}
 

@@ -94,7 +94,7 @@ class Notes extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
-            'tags' => 'Tags',
+            'tags' => 'Tags you have selected',
 			'status' => 'Status',
 			'create_time' => 'Create Time',
 			'update_time' => 'Update Time',
