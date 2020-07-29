@@ -118,7 +118,7 @@ def sync_master():
         exit_on_failure_command("git push ava-github --tags")
         print("Pushed all Tags successfully")
 
-        
+
         # for module in modules:
         #     os.chdir(FULL_DIR)
         #     moduledetails = module[0].split("/")
