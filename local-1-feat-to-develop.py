@@ -95,22 +95,6 @@ def sync_master():
         print("Pushed MERGED develop branch to remote origin successfully")
 
 
-        print ( "------------------" )
-        exit_on_failure_command( "git checkout -b release-" + release_branch_version_number +" develop")
-        print("Created a release Branch from Develop successfully")
-        # BUMP VERSION number manunally in the release log for now, next step, commit this bumped up version
-        exit_on_failure_command("git commit -a -m \"Bumped version number to "  + release_branch_version_number + " \" ")
-        print("Bumped version number successfully")
-
-        print ( "-------Finishing the release branch by merging with mster and tagging-----------" )
-        exit_on_failure_command( "git checkout master")
-        print("Checked out master branch successfully")
-        exit_on_failure_command( "git merge --no-ff release" + release_branch_version_number)
-        print("MERGED RELEASE branch with MASTER successfully")
-        exit_on_failure_command("git tag -a " + release_branch_version_number)
-        print("Tagged successfully")
-
-
         #
         # exit_on_failure_command("git push --all origin")
         # print("Pushed all bracnhes successfully")
