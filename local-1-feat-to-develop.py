@@ -90,18 +90,10 @@ def sync_master():
         exit_on_failure_command("git checkout develop")
         print("Switched to develop successfully")
         exit_on_failure_command("git merge --no-ff " + curr_branch_name)
-        print("Merged current feature branch to develop successufully")
+        print("Merged current feature branch to develop successfully")
         exit_on_failure_command("git push origin develop")
         print("Pushed MERGED develop branch to remote origin successfully")
 
-
-        #
-        # exit_on_failure_command("git push --all origin")
-        # print("Pushed all bracnhes successfully")
-        exit_on_failure_command("git push --all ava-github")
-        print("Pushed all bracnhes successfully")
-        exit_on_failure_command("git push --all tags")
-        print("Pushed all Tags successfully")
 
         # for module in modules:
         #     os.chdir(FULL_DIR)
