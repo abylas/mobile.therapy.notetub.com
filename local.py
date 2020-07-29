@@ -102,10 +102,10 @@ def sync_master():
         exit_on_failure_command("git commit -a -m \"Bumped version number to "  + release_branch_version_number + " \" ")
         print("Bumped version number successfully")
 
-        print ( "-------Finishing the release branch by merging with mster and tagging-----------" )
+        print ( "-------Finishing the release branch by merging with master and tagging-----------" )
         exit_on_failure_command( "git checkout master")
         print("Checked out master branch successfully")
-        exit_on_failure_command( "git merge --no-ff release " + release_branch_version_number)
+        exit_on_failure_command( "git merge --no-ff release-" + release_branch_version_number)
         print("MERGED RELEASE branch with MASTER successfully")
         exit_on_failure_command("git tag -a " + release_branch_version_number)
         print("Tagged successfully")
