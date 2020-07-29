@@ -91,8 +91,8 @@ def sync_master():
         print("Switched to develop successfully")
         exit_on_failure_command("git merge --no-ff " + curr_branch_name)
         print("Merged current feature branch to develop successufully")
-        exit_on_failure_command("git push origin develop")
-        print("Pushed MERGED develop branch to remote origin successfully")
+        exit_on_failure_command("git push ava-github develop")
+        print("Pushed MERGED develop branch to remote ava-github successfully")
 
 
         print ( "------------------" )
@@ -102,10 +102,10 @@ def sync_master():
         exit_on_failure_command("git commit -a -m \"Bumped version number to "  + release_branch_version_number + " \" ")
         print("Bumped version number successfully")
 
-        print ( "-------Finishin the release branch by merging with mster and tagging-----------" )
+        print ( "-------Finishing the release branch by merging with mster and tagging-----------" )
         exit_on_failure_command( "git checkout master")
         print("Checked out master branch successfully")
-        exit_on_failure_command( "git merge --no-ff release" + release_branch_version_number)
+        exit_on_failure_command( "git merge --no-ff release " + release_branch_version_number)
         print("MERGED RELEASE branch with MASTER successfully")
         exit_on_failure_command("git tag -a " + release_branch_version_number)
         print("Tagged successfully")
@@ -115,9 +115,9 @@ def sync_master():
         print("Tagged successfully")
 
         #
-        exit_on_failure_command("git push --all origin")
+        exit_on_failure_command("git push --all ava-github")
         print("Pushed all bracnhes successfully")
-        exit_on_failure_command("git push --all origin")
+        exit_on_failure_command("git push --all ava-github")
         print("Pushed all bracnhes successfully")
         exit_on_failure_command("git push --all tags")
         print("Pushed all Tags successfully")
