@@ -92,8 +92,8 @@ def sync_master():
         exit_on_failure_command( "git checkout -b release-" + release_branch_version_number +" develop")
         print("Created a release Branch from Develop successfully")
         # BUMP VERSION number manunally in the release log for now, next step, commit this bumped up version
-        exit_on_failure_command("git commit -a -m \"Bumped version number to "  + release_branch_version_number + " \" ")
-        print("Bumped version number successfully")
+        # exit_on_failure_command("git commit -a -m \"Bumped version number to "  + release_branch_version_number + " \" ")
+        # print("Bumped version number successfully")
 
         # for module in modules:
         #     os.chdir(FULL_DIR)
