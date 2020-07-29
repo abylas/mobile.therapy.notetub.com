@@ -13,3 +13,8 @@ assets
 /.vs/dns/v15/.suo
 /.vs/slnx.sqlite
 /protected/runtime/state.bin
+/cd
+/hs_err_pid13856.log
+/hs_err_pid21416.log
+/hs_err_pid6520.log
+/protected/runtime/HTML/4.2.0,06ff55bad4d86b499617a1dc09672767,1.ser
