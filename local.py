@@ -91,8 +91,8 @@ def sync_master():
         print("Switched to develop successfully")
         exit_on_failure_command("git merge --no-ff " + curr_branch_name)
         print("Merged current feature branch to develop successfully")
-        exit_on_failure_command("git push origin develop")
-        print("Pushed MERGED develop branch to remote origin successfully")
+        exit_on_failure_command("git push ava-github develop")
+        print("Pushed MERGED develop branch to remote ava-github successfully")
 
 
         print ( "--2-dvelop-to-release-merge---------------" )
