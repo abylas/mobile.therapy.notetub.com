@@ -91,8 +91,8 @@ def sync_master():
         # exit_on_failure_command("git push --all origin")
         # print("Pushed all bracnhes successfully")
         exit_on_failure_command("git push --all ava-github")
-        print("Pushed all bracnhes successfully")
-        exit_on_failure_command("git push --all tags")
+        print("Pushed all branches successfully")
+        exit_on_failure_command("git push ava-github --tags")
         print("Pushed all Tags successfully")
 
         # for module in modules:
