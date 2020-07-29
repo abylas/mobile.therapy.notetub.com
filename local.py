@@ -90,35 +90,35 @@ def sync_master():
         exit_on_failure_command("git checkout develop")
         print("Switched to develop successfully")
         exit_on_failure_command("git merge --no-ff " + curr_branch_name)
-        print("Merged current feature branch to develop successufully")
+        print("Merged current feature branch to develop successfully")
         exit_on_failure_command("git push origin develop")
         print("Pushed MERGED develop branch to remote origin successfully")
 
 
-        print ( "------------------" )
+        print ( "--2-dvelop-to-release-merge---------------" )
         exit_on_failure_command( "git checkout -b release-" + release_branch_version_number +" develop")
         print("Created a release Branch from Develop successfully")
         # BUMP VERSION number manunally in the release log for now, next step, commit this bumped up version
         exit_on_failure_command("git commit -a -m \"Bumped version number to "  + release_branch_version_number + " \" ")
         print("Bumped version number successfully")
 
-        print ( "-------Finishing the release branch by merging with mster and tagging-----------" )
-        exit_on_failure_command( "git checkout master")
+        print("-------Finishing the release branch by merging with mster and tagging-----------")
+        exit_on_failure_command("git checkout master")
         print("Checked out master branch successfully")
-        exit_on_failure_command( "git merge --no-ff release" + release_branch_version_number)
+        exit_on_failure_command("git merge --no-ff release-" + release_branch_version_number)
         print("MERGED RELEASE branch with MASTER successfully")
         exit_on_failure_command("git tag -a " + release_branch_version_number)
         print("Tagged successfully")
-
 
         #
         # exit_on_failure_command("git push --all origin")
         # print("Pushed all bracnhes successfully")
         exit_on_failure_command("git push --all ava-github")
-        print("Pushed all bracnhes successfully")
-        exit_on_failure_command("git push --all tags")
+        print("Pushed all branches successfully")
+        exit_on_failure_command("git push ava-github --tags")
         print("Pushed all Tags successfully")
 
+        
         # for module in modules:
         #     os.chdir(FULL_DIR)
         #     moduledetails = module[0].split("/")
