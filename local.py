@@ -115,9 +115,9 @@ def sync_master():
         print("Tagged successfully")
 
         #
-        exit_on_failure_command("git push --all origin")
-        print("Pushed all bracnhes successfully")
-        exit_on_failure_command("git push --all origin")
+        # exit_on_failure_command("git push --all origin")
+        # print("Pushed all bracnhes successfully")
+        exit_on_failure_command("git push --all ava-github")
         print("Pushed all bracnhes successfully")
         exit_on_failure_command("git push --all tags")
         print("Pushed all Tags successfully")
