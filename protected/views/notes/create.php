@@ -218,7 +218,7 @@ echo        "</label>";
 
 
 
-<h1>Create Notes</h1>
+<div id ="create_notes_title" >Create Notes</div>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
 

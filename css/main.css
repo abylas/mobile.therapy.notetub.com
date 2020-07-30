@@ -1,3 +1,4 @@
+
 body
 {
 	margin: 0;
@@ -425,7 +426,7 @@ label {
 	border-radius: 2em;
 	line-height: 16px;
 	height: 16px;
-	font-size: 14px;
+	font-size:10vw;
 	font-weight: 900;
 	text-decoration: none;
 
@@ -447,7 +448,7 @@ label {
 	border-radius: 2em;
 	line-height: 16px;
 	height: 16px;
-	font-size: 14px;
+	font-size: 10vw;
 	font-weight: 900;
 	text-decoration: none;
 
@@ -468,7 +469,7 @@ label {
 	border-radius: 2em;
 	line-height: 16px;
 	height: 16px;
-	font-size: 14px;
+	font-size:10vw;
 	font-weight: 900;
 	text-decoration: none;
 
@@ -488,7 +489,7 @@ label {
 	border-radius: 2em;
 	line-height: 16px;
 	height: 16px;
-	font-size: 14px;
+	font-size:10vw;
 	font-weight: 900;
 	text-decoration: none;
 
@@ -512,9 +513,24 @@ input[type=button], input[type=submit], input[type=reset] {
 
 }
 
+#Notes_name{
+width: calc(100% - 160px)
+}
 
+#Notes_tags{
+	width: calc(100% - 160px)
+}
 
+#notes-form label{
+	width: calc(100% - 160px);
+	font-size: 10vw;
+}
 
+#create_notes_title{
+
+	width: calc(100% - 160px);
+	font-size: 10vw;
+}
 .notes{
 	padding: 10px 20 px;
 	margin: 5px 10x;

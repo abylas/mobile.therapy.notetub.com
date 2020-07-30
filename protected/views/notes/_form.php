@@ -11,7 +11,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textArea($model,'name',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->textArea($model,'name',array('rows'=>20, 'cols'=>90)); ?>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
