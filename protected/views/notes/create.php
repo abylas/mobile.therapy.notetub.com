@@ -175,6 +175,9 @@ foreach($tags as $tag=>$weight)
     echo "<input type='checkbox' name='choice' id='tag" .$counter. "' onclick=insert()/><label for='tag".$counter."'>";
 echo $tag;
 echo        "</label>";
+
+
+
 //
 //    echo"<input type='checkbox' name='PLJan'";
 //if (isset($_POST['PLJan'])) { echo " value='checked'"; }
@@ -187,6 +190,10 @@ echo        "</label>";
 ////            'style'=>"font-size:{$weight}pt",
 //        ), $link)."\n";
 }
+
+echo "<br/>\n";
+
+
 ?>
 
     </div>
@@ -217,6 +224,11 @@ echo        "</label>";
 
 
 
+<?php         echo "<br/>\n"; ?>
+
+<?php         echo "<br/>\n"; ?>
+
+<?php         echo "<br/>\n"; ?>
 
 <h1>Create Notes</h1>
 
