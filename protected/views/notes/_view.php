@@ -13,8 +13,14 @@
     </div>
     <div class="nav">
         <b>Tags:</b>
-        <?php echo implode(', ', $data->tagLinks); ?>
+        <?php echo implode(', ', $data->tagLinks);
+
+        echo "<br/>\n";
+
+        ?>
         <br/>
+
+
         <?php echo CHtml::link('Permalink', $data->url);
 
         echo "<br/>\n";
