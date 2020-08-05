@@ -1,4 +1,4 @@
-———————————————————————————————————————-
+———————————————————————————————————————
 <div class="notes">
     <div class="name">
         <?php
@@ -9,7 +9,7 @@
 
         echo nl2br($data->name);
         $this->endWidget();
-        ?>                                                                                                                                                                        =
+        ?>
     </div>
     <div class="nav">
         <b>Tags:</b>
