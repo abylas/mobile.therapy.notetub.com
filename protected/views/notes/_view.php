@@ -26,7 +26,7 @@
         echo "<br/>\n";
         echo "<br/>\n";
 
-        echo $data->create_time;
+        echo date("F jS, Y,  H:m:s", strtotime($data->create_time));;
 
         ?> |
 <!--        --><?php //echo CHtml::link("Comments ({$data->commentCount})",$data->url.'#comments'); ?><!-- |-->
